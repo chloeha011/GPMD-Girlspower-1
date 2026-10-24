@@ -1,3 +1,5 @@
+# TERMINOLOGY
+
 1. Algorithm
 
 An algorithm is a set of step-by-step instructions used to solve a problem or complete a task. Each step follows a logical order to produce the desired result. Algorithms are used in everyday life and in computer programs to process information and solve problems.
@@ -60,7 +62,7 @@ Neural network training is the process of teaching a neural network by adjusting
 
 ⸻
 
-References of Terminology
+# References of Terminology
 
 1. NIST — Dictionary of Algorithms and Data Structures
     https://xlinux.nist.gov/dads/⁠￼
