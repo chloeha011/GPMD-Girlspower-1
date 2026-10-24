@@ -1,4 +1,4 @@
- Check Understanding
+# Check Understanding
 
 The learner should be able to explain the concepts in their own words and apply them to a new example.
 
