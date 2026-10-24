@@ -1,8 +1,8 @@
-Main Goal
+#Main Goal
 
 The main goal of this project is to help beginners understand algorithms, data structures, and connectionist artificial intelligence.
 
-Learning Objectives
+##Learning Objectives
 
 By the end of this project, students should be able to:
 
@@ -14,7 +14,7 @@ By the end of this project, students should be able to:
 6. Understand the relationship between algorithms, data structures, and connectionist AI.
 7. Recognize real-world applications of these concepts.
 
-References
+##References
 
 1. ACM Computer Science Learning Objectives
     https://ccecc.acm.org/guidance/computer-science/objectives/⁠￼
