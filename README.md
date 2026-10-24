@@ -11,11 +11,11 @@ Team’s member and Github usernames:
 
 1820262293 Adelina: adelina15
 
-1820262322 Nasiba Abdullaeva:
+1820262322 Nasiba Abdullaeva: abdullaevanasiba2008-arch
 
-1820262295 Tsolmon Munkhzaya:
+1820262295 Tsolmon Munkhzaya: mnhzaya
 
-1820262123 Samira Muhutdinova: smukhutdinova2804
+1820262123 Samira Muhutdinova: smukhutdinova2804-ops
 
 1820262337 Moad: 
 
