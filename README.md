@@ -17,7 +17,7 @@ Team’s member and Github usernames:
 
 1820262123 Samira Muhutdinova: smukhutdinova2804-ops
 
-1820262337 Moad: 
+1820262337 Moad: weeetyyyy7-shit-it
 
 
 Our team is currently exploring three key areas of computer science: algorithms, data structures, and connectionist AI. Through our research, we aim to understand how computational problems are solved efficiently, how data is organized and managed, and how neural networks learn from information. By studying these interconnected topics, we hope to build a solid foundation in computer science and gain a deeper understanding of modern AI technologies.
