@@ -1,4 +1,4 @@
-Prerequisite Knowledge
+# Prerequisite Knowledge
 
 This project is designed for beginners, so students do not need advanced computer science knowledge.
 
@@ -11,7 +11,7 @@ The recommended prerequisites are:
 
 Previous programming experience is not required. The project will introduce the main concepts using simple explanations and familiar examples.
 
-References
+## References
 
 1. Hochschule Osnabrück — https://www.hs-osnabrueck.de/en/module/11b0008
 2. Microsoft Learn — https://learn.microsoft.com/en-us/training/paths/ai-concepts/
