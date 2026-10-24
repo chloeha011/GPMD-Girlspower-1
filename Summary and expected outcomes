@@ -1,0 +1,69 @@
+Algorithms, Data Structures, and Connectionist AI
+An effective answer should explain each concept, show how they relate to one another, and provide examples that allow both the learner and teacher to check understanding.
+1. Algorithms
+An algorithm is a finite sequence of clear instructions used to solve a problem or complete a task.
+For example, an algorithm to find the largest number in a list:
+Assume the first number is the largest.
+Compare it with every remaining number.
+If a larger number is found, update the largest value.
+Return the largest value after checking all numbers.
+Example: [3, 8, 2, 10, 5]
+The algorithm returns 10.
+Two important properties are:
+Correctness: Does the algorithm produce the expected result?
+Efficiency: How much time and memory does it require?
+2. Data Structures
+A data structure is a way of organizing and storing data so that it can be accessed and modified efficiently.
+
+Array
+Stores elements in an ordered sequence, allowing access by index.
+Example: [10, 20, 30]. The element at index 1 is 20 in zero-based indexing.
+
+Linked list
+Stores elements in nodes connected by links. It can grow or shrink dynamically.
+
+Stack
+Follows Last In, First Out (LIFO). The last item added is the first item removed.
+Example: A stack of plates.
+
+Queue
+Follows First In, First Out (FIFO). The first item added is the first item removed.
+Example: People waiting in a line.
+The choice of data structure affects how efficiently an algorithm can perform operations such as searching, inserting, deleting, and sorting.
+3. Connectionist AI
+Connectionist AI is an approach to artificial intelligence inspired by the interconnected neurons of the human brain. It is commonly implemented through artificial neural networks.
+
+cloud.tencent.com
+A neural network typically consists of:
+Input layer: Receives information, such as image pixels or numerical data.
+Hidden layers: Process information using weighted connections and mathematical functions.
+Output layer: Produces a prediction or classification.
+For example, to recognize handwritten digits, a neural network learns patterns from many labeled images. During training, it adjusts its weights to reduce prediction errors.
+Unlike a conventional algorithm that follows explicitly specified problem-solving instructions, a neural network learns patterns from training data. However, both still rely on algorithms and data structures in their implementation.
+4. How the three concepts connect
+Consider an AI system that recognizes handwritten numbers.
+Data structures
+Store image pixels, model weights, and training examples.
+Algorithms
+Train the model, update weights, and calculate predictions.
+Connectionist AI
+Use a neural network to recognize patterns and predict the digit.
+These concepts serve different but complementary purposes:
+Concept
+Main question it answers
+Algorithm
+How do we solve the problem?
+Data structure
+How do we organize the information?
+Connectionist AI
+How can a system learn patterns from data?
+
+5. References
+The following references are separated from the main content and formatted in APA 7th-edition style.
+1. Algorithms
+OpenStax. (n.d.). Introduction to computer science: 3.1 Introduction to data structures and algorithms. https://openstax.org/books/introduction-computer-science/pages/3-1-introduction-to-data-structures-and-algorithms
+2. Data structures
+Bible, P. W., Moser, L., & Scarlato, M. M. (2023). An open guide to data structures and algorithms. PALNI. https://pressbooks.palni.org/anopenguidetodatastructuresandalgorithms/
+3. Connectionist AI
+Garson, J. (2019). Connectionism. In The Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/connectionism/
+
