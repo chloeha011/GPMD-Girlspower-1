@@ -1,4 +1,4 @@
- Current Development Status of Each Section
+# Current Development Status of Each Section
 
 The project is being developed step by step. The following sections show the current status of each part of the project.
 
