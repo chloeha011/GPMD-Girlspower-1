@@ -1,3 +1,0 @@
-# girlspower-1
-CS and AI project
-Artificial Intelligence (AI) is a technology that enables computers and machines to perform tasks that usually require human intelligence. These tasks include learning, problem-solving, understanding languages, recognizing images, and making decisions. AI is widely used in education, healthcare, business, transportation, and entertainment. For example, AI chatbots can answer questions, while recommendation systems suggest movies or music based on users’ interests. AI helps people work more efficiently, save time, and solve complex problems. However, it also raises concerns about privacy, job displacement, and misinformation. Therefore, using AI responsibly is essential to ensure that it benefits society.
