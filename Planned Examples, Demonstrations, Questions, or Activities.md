@@ -1,4 +1,4 @@
-Planned Examples, Demonstrations, Questions, or Activities
+# Planned Examples, Demonstrations, Questions, or Activities
 
 To make the project easier to understand, we will use practical examples and simple activities.
 
@@ -24,7 +24,7 @@ Activity 4: Connecting the Three Topics
 
 We can use image recognition as an example to explain how algorithms perform computational tasks, data structures organize information, and neural networks learn patterns from data.
 
-Questions for Discussion
+## Questions for Discussion
 
 * Where do we use algorithms in everyday life?
 * Why do computers need data structures?
