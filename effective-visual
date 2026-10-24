@@ -1,0 +1,110 @@
+# Visual Guide: Algorithms, Data Structures, and Connectionist AI
+
+## 1. Project Overview
+
+- **Project Topic:** Algorithms, Data Structures, and Connectionist AI
+- **Role:** Co-Visual Lead
+- **Purpose:** Create clear, consistent, and educational visuals to explain the main concepts of the project.
+
+## 2. Algorithms
+
+### Recommended Visuals
+- Algorithm flowchart
+- Sorting algorithm visualization
+- Input-process-output diagram
+
+### Search Keywords
+- `algorithm flowchart educational diagram`
+- `bubble sort visualization`
+- `input process output computer science`
+
+### Source
+- [Wikimedia Commons](https://commons.wikimedia.org/)
+
+### Visual Requirements
+- Use a simple, readable flowchart.
+- Show the sequence of algorithmic steps.
+- Include arrows and decision points where necessary.
+
+**Suggested Caption:**
+
+> An algorithm is a finite sequence of instructions used to solve a problem or complete a task.
+
+---
+
+## 3. Data Structures
+
+### Recommended Visuals
+- Arrays
+- Linked lists
+- Stacks and queues
+- Trees
+- Graphs
+
+### Search Keywords
+- `data structures array linked list diagram`
+- `stack and queue visualization`
+- `tree and graph data structures diagram`
+
+### Source
+- [OpenDSA](https://opendsa-server.cs.vt.edu/)
+
+### Visual Requirements
+- Clearly label each data structure.
+- Show connections between nodes where relevant.
+- Avoid overcrowding the diagram.
+
+**Suggested Caption:**
+
+> Data structures organize information to make storing, accessing, and processing data more efficient.
+
+---
+
+## 4. Connectionist AI
+
+### Recommended Visuals
+- Artificial neural network
+- Input, hidden, and output layers
+- Nodes and weighted connections
+- Neural network learning process
+
+### Search Keywords
+- `artificial neural network input hidden output layers diagram`
+- `neural network nodes weights educational illustration`
+- `neural network training process diagram`
+
+### Source
+- [Wikimedia Commons](https://commons.wikimedia.org/)
+
+### Visual Requirements
+- Label the input, hidden, and output layers.
+- Use nodes to represent artificial neurons.
+- Use connecting lines to represent weighted connections.
+- Prefer educational diagrams over generic robot illustrations.
+
+**Suggested Caption:**
+
+> Connectionist AI uses networks of interconnected computational units to learn patterns from data and generate predictions or decisions.
+
+---
+
+## 5. Original Overview Diagram
+
+### Title: Three Foundations of Intelligent Computing
+
+The diagram should explain how the three concepts contribute to computational problem-solving.
+
+```text
+                  INTELLIGENT COMPUTING
+                           |
+          +----------------+----------------+
+          |                |                |
+      ALGORITHMS      DATA STRUCTURES   CONNECTIONIST AI
+          |                |                |
+      Define steps      Organize         Learn patterns
+      for solving       information      from data using
+      problems          efficiently      neural networks
+          |                |                |
+          +----------------+----------------+
+                           |
+                   PROBLEM SOLVING
