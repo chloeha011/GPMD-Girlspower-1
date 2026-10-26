@@ -15,10 +15,10 @@ The content is designed for beginners and will serve as the foundation for the S
 - [04 — Examples and Learner Activities](ALGORITHMS/04_Examples_and_Learner_Activities.md)
 
 ### Data Structures
-- [01 — Introduction and Key Concepts](Data_Structures/01_Introduction_and_Key_Concepts.md)
-- [02 — Linear Data Structures](Data_Structures/02_Linear_Data_Structures.md)
-- [03 — Non-Linear Data Structures](Data_Structures/03_Non_Linear_Data_Structures.md)
-- [04 — Examples and Learner Activities](Data_Structures/04_Examples_and_Learner_Activities.md)
+- [01 — Introduction and Key Concepts](DATA_STRUCTURES/01_Introduction_and_Key_Concepts.md)
+- [02 — Linear Data Structures](DATA_STRUCTURES/02_Linear_Data_Structures.md)
+- [03 — Non-Linear Data Structures](DATA_STRUCTURES/03_Non_Linear_Data_Structures.md)
+- [04 — Examples and Learner Activities](DATA_STRUCTURES/04_Examples_and_Learner_Activities.md)
 
 ### Connectionist AI
 - [01 — Introduction to Connectionist AI](Connectionist_AI/01_Introduction_to_Connectionist_AI.md)
