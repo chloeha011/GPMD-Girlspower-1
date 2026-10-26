@@ -47,7 +47,30 @@ By the end of the learning module, learners should be able to:
 
 ## 3. Module Structure
 
-The module is organized into four connected sections.
+The project focuses on three major topics: **Algorithms, Data Structures, and Connectionist Artificial Intelligence**. The module is designed to help beginners understand these concepts through structured explanations, practical examples, visual materials, and learning activities.
+
+The `General/` folder contains five documents that define the module's learning objectives, content structure, prerequisites, planned activities, and development progress.
+
+### 3.1 Module Planning Documents
+
+- [Introduction and Learning Objectives](./General/01_Introduction_and_Learning_Objectives.md) — introduces the module, its purpose, and the expected learning outcomes.
+- [Major Topics and Subtopics](./General/02_Major_Topics_and_Subtopics.md) — outlines the main topics, subtopics, and their logical learning sequence.
+- [Prerequisite Knowledge](./General/03_Prerequisite_Knowledge.md) — identifies the foundational knowledge learners need before starting the module.
+- [Planned Examples and Learner Activities](./General/04_Planned_Examples_and_Learner_Activities.md) — describes planned examples, demonstrations, practice tasks, and application questions.
+- [Development Status and Task Plan](./General/05_Development_Status_and_Task_Plan.md) — tracks the progress of each section, completed work, and remaining tasks.
+
+Together, these documents provide an overview of the module's design and guide the development of the learning materials.
+
+### 3.2 Main Learning Topics
+
+The learning module covers the following topics:
+
+1. **Algorithms:** Understanding algorithms, their representations, searching and sorting methods, and basic algorithm efficiency.
+2. **Data Structures:** Exploring how data is organized, stored, and accessed.
+3. **Connectionist Artificial Intelligence:** Understanding neural networks and how they learn patterns from data.
+4. **Connections Between the Topics:** Examining how algorithms and data structures support AI applications.
+
+Each topic will be supported by explanations, worked examples, visual materials, and learner activities as the module develops.
 
 ### A. Algorithms
 
