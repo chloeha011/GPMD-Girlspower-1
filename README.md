@@ -15,7 +15,7 @@ The content is designed for beginners and will serve as the foundation for the S
 - [04 — Examples and Learner Activities](ALGORITHMS/04_Examples_and_Learner_Activities.md)
 
 ### Data Structures
-- [01 — Introduction and Key Concepts](DATA STRUCTURE)
+- [01 — Introduction and Key Concepts](DATA STRUCTURE/01_Introduction_and_Key_Concepts.md)
 - [02 — Linear Data Structures](DATA_STRUCTURES/02_Linear_Data_Structures.md)
 - [03 — Non-Linear Data Structures](DATA_STRUCTURES/03_Non_Linear_Data_Structures.md)
 - [04 — Examples and Learner Activities](DATA_STRUCTURES/04_Examples_and_Learner_Activities.md)
