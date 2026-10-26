@@ -12,6 +12,338 @@ In computer science, these tasks are handled by searching and sorting algorithms
 Different algorithms approach these tasks in different ways. Understanding how they work helps us choose a suitable method for a particular problem.
 
 ## 2.2 Searching Algorithms
+Linear Search
+
+Linear search examines elements sequentially until the target value is found or the collection ends.
+
+How it works:
+
+Start with the first element.
+
+Compare the current element with the target.
+
+If they match, return the element's index.
+
+Otherwise, move to the next element.
+
+If the target is not found, return -1.
+
+Python implementation:
+
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
+    return -1
+
+
+numbers = [12, 7, 25, 9, 18]
+
+print(linear_search(numbers, 9))   # Output: 3
+print(linear_search(numbers, 100)) # Output: -1
+
+Advantages:
+
+Simple to understand and implement.
+
+Works with sorted and unsorted collections.
+
+Does not require additional memory proportional to the input size.
+
+Disadvantages:
+
+May need to examine every element.
+
+Becomes inefficient for large datasets when searches are frequent.
+
+Binary Search
+
+Binary search repeatedly divides the search interval into two halves. It compares the target with the middle element and eliminates the half that cannot contain the target.
+
+Important requirement: The collection must already be sorted.
+
+How it works:
+
+Set the left and right boundaries.
+
+Calculate the middle index.
+
+If the middle element equals the target, return its index.
+
+If the target is smaller, search the left half.
+
+If the target is larger, search the right half.
+
+Repeat until the target is found or the interval becomes empty.
+
+Python implementation:
+
+def binary_search(arr, target):
+    left = 0
+    right = len(arr) - 1
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+
+    return -1
+
+
+numbers = [7, 9, 12, 18, 25]
+
+print(binary_search(numbers, 18))  # Output: 3
+print(binary_search(numbers, 100)) # Output: -1
+
+Advantages:
+
+Very efficient for searching large, sorted collections.
+
+Reduces the search space by approximately half at each step.
+
+The iterative implementation uses constant auxiliary space.
+
+Disadvantages:
+
+Requires sorted data.
+
+Maintaining sorted data can introduce additional costs.
+
+It is not necessarily the best choice for every data structure; for example, linked lists do not provide efficient random access.
+
+Linear Search vs. Binary Search
+
+Feature
+
+Linear Search
+
+Binary Search
+
+Data requirement
+
+Sorted or unsorted
+
+Must be sorted
+
+Best-case time
+
+O(1)
+
+O(1)
+
+Average-case time
+
+O(n)
+
+O(log n)
+
+Worst-case time
+
+O(n)
+
+O(log n)
+
+Iterative auxiliary space
+
+O(1)
+
+O(1)
+
+Main advantage
+
+Simplicity and flexibility
+
+Fast searching in sorted data
+
+Best use case
+
+Small or unsorted collections
+
+Large, sorted collections
+
+Here, n represents the number of elements.
+
+Sorting Algorithms
+
+Bubble Sort
+
+Bubble sort repeatedly compares adjacent elements and swaps them when they are in the wrong order. After each pass, a larger element moves towards the end of the list.
+
+How it works:
+
+Compare adjacent elements.
+
+Swap them if the left element is greater than the right element.
+
+Continue through the list.
+
+Repeat until the list is sorted or a complete pass makes no swaps.
+
+Python implementation:
+
+def bubble_sort(arr):
+    arr = arr.copy()
+    n = len(arr)
+
+    for i in range(n):
+        swapped = False
+
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+
+        if not swapped:
+            break
+
+    return arr
+
+
+numbers = [5, 2, 8, 1, 3]
+
+print(bubble_sort(numbers))
+# Output: [1, 2, 3, 5, 8]
+
+Advantages:
+
+Easy to understand and implement.
+
+Uses constant auxiliary space apart from the copied list.
+
+The optimized version performs well on an already-sorted list.
+
+Disadvantages:
+
+Usually inefficient for large datasets.
+
+Repeated comparisons and swaps can make it slow.
+
+Its average and worst-case time complexity is quadratic.
+
+Merge Sort
+
+Merge sort uses the divide-and-conquer approach. It divides the list into smaller parts, sorts those parts, and merges them into a sorted result.
+
+How it works:
+
+Divide the list into two halves.
+
+Recursively sort each half.
+
+Compare the elements at the beginning of each sorted half.
+
+Merge the elements in the correct order.
+
+Continue until one sorted list remains.
+
+Python implementation:
+
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr.copy()
+
+    mid = len(arr) // 2
+
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+
+    result = []
+    i = 0
+    j = 0
+
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+
+    result.extend(left[i:])
+    result.extend(right[j:])
+
+    return result
+
+
+numbers = [5, 2, 8, 1, 3]
+
+print(merge_sort(numbers))
+# Output: [1, 2, 3, 5, 8]
+
+Advantages:
+
+Predictable O(n log n) time complexity.
+
+Performs well on large datasets.
+
+Stable when equal elements from the left half are selected first.
+
+Useful when predictable performance is important.
+
+Disadvantages:
+
+Typically requires O(n) additional space for an array-based implementation.
+
+Recursive calls introduce overhead.
+
+May be less efficient than simpler algorithms for very small datasets.
+
+Quick Sort
+
+Quick sort is another divide-and-conquer sorting algorithm. It selects a pivot, partitions the elements around it, and recursively sorts the resulting partitions.
+
+How it works:
+
+Select a pivot element.
+
+Partition the remaining elements into those smaller than the pivot and those greater than or equal to it.
+
+Recursively sort the partitions.
+
+Combine the sorted partitions with the pivot.
+
+Python implementation:
+
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr.copy()
+
+    pivot = arr[len(arr) // 2]
+
+    smaller = [x for x in arr if x < pivot]
+    equal = [x for x in arr if x == pivot]
+    larger = [x for x in arr if x > pivot]
+
+    return quick_sort(smaller) + equal + quick_sort(larger)
+
+
+numbers = [5, 2, 8, 1, 3, 2]
+
+print(quick_sort(numbers))
+# Output: [1, 2, 2, 3, 5, 8]
+
+This implementation illustrates the partitioning concept. It creates additional lists and is not an in-place implementation of quick sort.
+
+Advantages:
+
+Average-case time complexity is O(n log n).
+
+Often performs efficiently in practice with suitable pivot selection and implementation.
+
+Can be implemented in place to reduce auxiliary memory usage.
+
+Disadvantages:
+
+Poor pivot choices can produce O(n²) worst-case time.
+
+Performance depends on the partitioning strategy.
+
+Standard in-place implementations are generally not stable.
 
 ### 2.2.1 Linear Search
 
