@@ -76,13 +76,12 @@ Each topic will be supported by explanations, worked examples, visual materials,
 
 ## 4. Repository Organization
 
-The repository is organized into three main areas: General, Content, and Visuals.
+The repository is organized into three main branches to support different aspects of the project:
 
-- **General:** Team information, project goals, learning objectives, module outline, and project organization.
-- **Content:** Explanations, terminology, prerequisites, worked examples, learning activities, and assessment questions.
-- **Visuals:** Diagrams, illustrations, charts, and other visual resources supporting the learning materials.
+- **[GENERAL](https://github.com/chloeha011/GPMD-Girlspower-1/tree/GENERAL)** — contains project planning and coordination documents, including the `general-documents/` folder.
+- **[CONTENT](https://github.com/chloeha011/GPMD-Girlspower-1/tree/CONTENT)** — contains the learning module's written content, explanations, examples, and learning activities.
+- **[VISUALS](https://github.com/chloeha011/GPMD-Girlspower-1/tree/VISUALS)** — contains visual materials that support the learning module, such as diagrams, illustrations, and visual guides.
 
-Please refer to the corresponding folders and files in this repository for the latest content.
 
 ## 5. Learning Materials
 
