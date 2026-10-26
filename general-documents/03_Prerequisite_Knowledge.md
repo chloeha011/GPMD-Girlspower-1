@@ -1,49 +1,29 @@
 # Prerequisite Knowledge
 
-## 1. Overview
+## 1. What Learners Should Know
 
-This learning module is designed for beginners with little or no previous experience in computer science or artificial intelligence. Learners only need basic computer literacy, logical thinking, and a willingness to learn new concepts.
+Our target learners are beginners who want to learn about algorithms, data structures, and connectionist AI. They do not need to have studied computer science before, but some basic computer knowledge and logical thinking will be helpful.
 
-No advanced programming or mathematical knowledge is required.
+## 2. Basic Requirements
 
-## 2. Required Background Knowledge
+- **Basic computer knowledge:** Learners should know how to use a computer and understand that a computer follows instructions to perform tasks.
+- **Logical thinking:** Learners should be able to follow steps in order and recognize simple patterns. This will help them understand how algorithms work.
+- **Basic mathematics:** Simple calculations and comparisons are enough for the examples in this module.
+- **Basic understanding of data:** Learners should know that data can include numbers, text, images, and other types of information.
 
-### 2.1 Basic Computer Literacy
+## 3. What Learners Do Not Need
 
-Learners should be familiar with using a computer and understanding that computers process information according to instructions.
+Learners do not need to know a programming language or have previous experience with AI. Advanced mathematics and statistics are also not required. The main concepts will be explained with examples and visual materials.
 
-### 2.2 Logical Thinking
+## 4. Connection to the Main Topics
 
-Learners should be able to follow simple instructions, recognize patterns, and understand step-by-step processes. These skills help them understand how algorithms solve problems.
-
-### 2.3 Basic Mathematics
-
-Basic arithmetic and the ability to compare quantities are sufficient. Learners will use these skills to understand simple data comparisons, searching and sorting examples, and introductory neural network concepts.
-
-### 2.4 Basic Understanding of Data
-
-Learners should understand that data can represent information such as numbers, words, images, or user preferences. This provides a foundation for learning how data structures organize information and how AI systems use data.
-
-## 3. Knowledge Not Required Before Starting
-
-Learners do not need prior knowledge of:
-
-- Programming languages or coding.
-- Advanced algorithms or data structures.
-- Artificial intelligence or machine learning.
-- Advanced mathematics, statistics, or calculus.
-
-These concepts will be introduced gradually through explanations, examples, and learning activities.
-
-## 4. How These Prerequisites Support Learning
-
-| Prerequisite | Related Learning Topic |
+| Basic Knowledge | How It Helps |
 |---|---|
-| Basic computer literacy | Understanding algorithms and computer processes |
-| Logical thinking | Following algorithms and solving problems step by step |
-| Basic mathematics | Understanding searching, sorting, and simple neural network examples |
-| Basic understanding of data | Learning data structures and how AI systems use data |
+| Computer knowledge | Understanding what computers do when following instructions |
+| Logical thinking | Following the steps of an algorithm |
+| Basic mathematics | Comparing values in searching and sorting examples |
+| Understanding data | Learning how data is organized and used by AI systems |
 
-## 5. Learning Support
+## 5. Support for Beginners
 
-The module will use beginner-friendly language, visual explanations, worked examples, and practical activities. Complex concepts will be introduced step by step so that learners can build their understanding without needing extensive prior knowledge.
+Since learners may have different levels of experience, the module will start with simple examples before moving to more difficult ideas. Diagrams, demonstrations, and practice questions will help learners follow the explanations.
