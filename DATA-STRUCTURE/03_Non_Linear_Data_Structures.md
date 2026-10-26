@@ -1,219 +1,282 @@
-# Data Structures – Learning Goals, Explanations and Guidance
+# Non-Linear Data Structures
 
-## 1. Who This Section Is For
+## 1. Definition
 
-This material is written for people who are completely new to computer science and artificial intelligence.  
-The explanations stay simple and clear. The goal is not to turn beginners into experts. The goal is to help them understand the basic ideas and feel less scared of the topic.
+A non-linear data structure is a type of data structure in which data elements are organized in a hierarchical or network-like arrangement rather than a single sequential order. Unlike linear data structures, where elements generally follow one logical path, non-linear data structures allow an element to connect to multiple other elements.
 
-## 2. What Are Learning Goals?
+These connections create more complex relationships between data. For example, in a tree, one parent node can connect to several child nodes, while in a graph, a node can connect to many other nodes without following a strict hierarchy.
 
-Learning goals are the main things we want people to understand or be able to do after they finish the materials on Data Structures.  
-They tell us what success looks like.
+Non-linear data structures are particularly useful when information has relationships that cannot be represented efficiently as a simple list. They are widely used in computer science for representing file systems, social networks, transportation routes, computer networks, and artificial intelligence models.
 
-## 3. Main Learning Goals for Data Structures
+A non-linear data structure defines both how data is organized and how elements are connected, which influences how data can be searched, traversed, inserted, deleted, and processed.
 
-### Goal 1: Understand what a data structure is
+### Linear vs. Non-Linear Data Structures
 
-A data structure is a way of organising and storing information in a computer so that it can be used efficiently.
+### Linear
 
-**Example:**  
-A shopping list is a simple data structure. A phone book (where you look up a name to find a number) is another kind of data structure.
+Elements follow one logical sequence.
 
-**Learning outcomes:**
-- Explain what a data structure is in their own words.
-- Give one simple everyday example of a data structure.
-- Understand that different structures make different operations easier or faster.
-- Recognise that choosing the right structure becomes more important as the amount of data grows.
+Example: array, linked list, stack, queue
 
-### Goal 2: Learn the most common data structures for beginners
+### Non-linear
 
-**Learning outcomes:**
-- Name and describe the following structures:
-  - Lists (or arrays)
-  - Dictionaries (or hash tables)
-  - Stacks
-  - Queues
-  - Simple trees
-- Explain in simple words what each structure is good for.
-- Match a structure to a simple real-life or programming situation  
-  (for example: “I need to look up a name quickly → use a dictionary”).
+Elements can have multiple connections.
 
-### Goal 3: Understand basic operations
+Example: tree, graph
 
-**Learning outcomes:**
-- Understand the meaning of common operations such as add, remove, search, and access.
-- See that different structures make some of these operations fast and others slower.
-- Follow simple examples of these operations step by step.
+## 2. How Non-Linear Data Structures Work
 
-### Goal 4: See the connection between data structures and algorithms
+Non-linear data structures work by representing data as nodes and the connections between them. A node is an individual unit that stores data, while a connection represents a relationship between two nodes. Depending on the structure, these connections may be called edges, links, or parent-child relationships.
 
-**Learning outcomes:**
-- Understand that algorithms need data structures to work on.
-- Recognise that a good choice of data structure can make an algorithm much faster or simpler.
-- See that neural networks and other AI systems also rely on data structures to store and process information.
+Unlike a linear structure, which can usually be traversed along one sequence, a non-linear structure may have multiple possible paths. Programs use specific traversal or searching algorithms to explore these connections systematically.
 
-### Goal 5: Move from only reading to actually trying
+### General Process
 
-**Learning outcomes:**
-- Follow simple examples of each structure.
-- Change small parts of an example and observe what happens.
-- Feel that they can experiment without being completely lost.
-- Gain confidence to continue learning.
+1. Create nodes: Each node stores an individual data element.
+2. Establish connections: Nodes are connected according to the relationships in the data.
+3. Choose a starting point: For example, the root of a tree or a starting vertex in a graph.
+4. Traverse or search: The program follows connections according to an algorithm.
+5. Process or update data: Nodes and connections may be added, removed, or modified as needed.
 
-### Goal 6: Feel more confident about the topic
+### Memory Organization
 
-Many beginners feel that data structures are too technical or too abstract.
+Non-linear data structures are commonly implemented using linked nodes, references, arrays, or combinations of these approaches.
 
-**Learning outcomes:**
-- Feel that they understand the basic ideas.
-- Feel that they can continue learning without being completely lost.
-- Be able to explain the main ideas to another beginner in simple language.
+- Linked representation: Nodes store references to connected nodes. This is common in trees and adjacency-list graphs.
+- Array-based representation: Data is stored in arrays using index relationships. Binary heaps, for example, are commonly implemented this way.
+- Adjacency matrix: A two-dimensional array records whether pairs of graph vertices are connected.
 
-## 4. Detailed Explanations
+The best representation depends on the structure, the operations required, and the amount of memory available.
 
-### 4.1 What is a data structure?
+## 3. Characteristics of Non-Linear Data Structures
 
-A data structure is a particular way of organising and storing information so that it can be used efficiently.
+Non-linear data structures have several important characteristics:
 
-Different structures make different operations easy or hard. Choosing the right structure is an important part of solving problems with computers.
+- Multiple connections: A node may connect to several other nodes.
+- Hierarchical or network organization: Data may form parent-child relationships or a general network.
+- Multiple traversal paths: Different algorithms may visit nodes in different orders.
+- Complex relationships: They can represent dependencies, relationships, and interconnected information.
+- Flexible structure: Nodes and connections can often be added or removed dynamically.
+- Traversal complexity: Searching and processing data depends on the structure, its representation, and the algorithm used.
 
-**Everyday examples:**
-- A shopping list → items in order
-- A phone book or dictionary → fast lookup by name
-- A stack of plates → last one on top is the first one taken off
-- A queue of people at a ticket counter → first person to join is the first to be served
-- A family tree → hierarchical relationships
+## 4. Categories of Non-Linear Data Structures
 
-### 4.2 Lists (or Arrays)
+The two main categories are trees and graphs. Other specialized structures, such as heaps and tries, are commonly classified as tree-based structures.
 
-A list (or array) stores items in a sequence, one after another.
+### 4.1 Trees
 
-**Main characteristics:**
-- Items have a position (starting from 0 or 1).
-- You can quickly access an item if you know its position.
-- Adding or removing items in the middle can require shifting other items.
+A tree is a hierarchical data structure consisting of nodes connected by edges. It begins with a special node called the root, and other nodes are organized into parent-child relationships.
 
-**Good for:**
-- Keeping a collection of items in order
-- Going through items one by one
-- Situations where you often need the item in a specific position
+A tree with \\(n\\) nodes has exactly \\(n-1\\) edges, provided it is a conventional non-empty tree.
 
-### 4.3 Dictionaries (or Hash Tables)
+### Example of a Tree
 
-A dictionary stores pairs of keys and values.  
-You give a key (for example a name) and quickly get the associated value (for example a phone number).
+A is the root. B and C are its children. D, E, F, and G are leaf nodes.
 
-**Main characteristics:**
-- Very fast lookup by key
-- Keys must be unique
-- Order of items is usually not important
+Important terminology
 
-**Good for:**
-- Looking up information by name, ID, or any unique identifier
-- Counting how many times something appears
-- Storing settings or properties
+- Root: The topmost node of the tree.
+- Parent: A node that has one or more children.
+- Child: A node directly connected below a parent.
+- Leaf: A node with no children.
+- Edge: A connection between two nodes.
+- Subtree: A node and the descendants beneath it.
+- Depth: The number of edges from the root to a particular node.
+- Height: The number of edges on the longest downward path from a node to a leaf.
 
-**Simple example situation:**  
-“I need to look up a student’s grade by their name very quickly” → use a dictionary.
+How a tree works
 
-### 4.4 Stacks
+1. Data is placed in nodes.
+2. A root node establishes the starting point.
+3. Other nodes are connected through parent-child relationships.
+4. A traversal algorithm visits nodes according to a defined order.
+5. Search or insertion operations follow the tree's rules to locate or organize data.
 
-A stack follows the rule **Last-In, First-Out** (LIFO).
+Common types of trees
 
-**Everyday analogy:**  
-A stack of plates. The last plate you put on top is the first one you take off.
+- Binary tree: Each node has at most two children.
+- Binary search tree (BST): Values in the left subtree are smaller than the node's value, and values in the right subtree are larger, under the standard distinct-key convention.
+- Heap: A complete binary tree that satisfies a heap-order property, such as each parent being greater than or equal to its children in a max-heap.
+- Trie: A tree-like structure that stores sequences, commonly strings, by their prefixes.
 
-**Main operations:**
-- Push → add an item to the top
-- Pop → remove the item from the top
+Advantages
 
-**Good for:**
-- Undo features
-- Checking matching brackets in code
-- Keeping track of nested function calls
-- Browser back-button history
+- Represents hierarchical relationships naturally.
+- Can support efficient searching and insertion when appropriately structured.
+- Organizes information into meaningful levels.
 
-### 4.5 Queues
+Disadvantages
 
-A queue follows the rule **First-In, First-Out** (FIFO).
+- More complex to implement than simple linear structures.
+- An unbalanced search tree can have poor performance.
+- Traversal and memory management may require additional logic.
 
-**Everyday analogy:**  
-A line of people at a ticket counter. The first person to join the line is the first person to be served.
+Applications
 
-**Main operations:**
-- Enqueue → add an item to the end of the line
-- Dequeue → remove the item from the front of the line
+- Computer file systems.
+- Organizational charts.
+- Database indexing.
+- Searching and sorting.
+- Autocomplete and word prediction.
 
-**Good for:**
-- Processing tasks in the order they arrive
-- Print queues
-- Waiting lists
-- Breadth-first exploration of data
+### 4.2 Graphs
 
-### 4.6 Simple Trees
+A graph is a non-linear data structure consisting of vertices (also called nodes) and edges that connect pairs of vertices. Unlike a tree, a graph can contain cycles, and a node may connect to many others without following a parent-child hierarchy.
 
-A tree is a hierarchical structure with a starting point (the root) and branches.
+A graph is commonly represented as:
 
-**Everyday analogy:**  
-A family tree or the folder structure on a computer.
+\\[ G=(V,E) \\]
 
-**Main characteristics:**
-- One root
-- Each item can have children
-- Useful for representing hierarchical relationships
+where:
 
-**Good for:**
-- File systems
-- Organisation charts
-- Decision processes
-- Efficient searching when the tree is kept ordered (binary search trees)
+- \\(V\\) is the set of vertices.
+- \\(E\\) is the set of edges connecting vertices.
 
-### 4.7 Choosing the right structure
+### Example of a Graph
 
-The same information can often be stored in different structures.  
-The best choice depends on what you need to do most often:
+Each edge represents a relationship. Multiple paths can connect the same parts of a network.
 
-- Need fast lookup by name or ID? → Dictionary
-- Need to process items in the order they arrived? → Queue
-- Need to undo the last actions? → Stack
-- Need items in a simple ordered sequence? → List
-- Need hierarchical relationships? → Tree
+Important terminology
 
-Learning to make this choice is one of the most practical skills in the topic.
+- Vertex: An individual node in the graph.
+- Edge: A connection between two vertices.
+- Adjacent vertices: Vertices directly connected by an edge.
+- Degree: The number of edges incident to a vertex in an undirected graph.
+- Path: A sequence of vertices connected by edges.
+- Cycle: A path that returns to its starting vertex without repeating intermediate vertices.
+- Weight: A value assigned to an edge, such as distance, cost, or time.
 
-## 5. How Data Structures Connect to the Rest of the Project
+How a graph works
 
-- Algorithms need data structures to store and organise the information they work on.
-- A good data structure can make an algorithm much faster or simpler.
-- Connectionist AI (neural networks) still needs ordinary data structures to store training data, weights, and intermediate results.
+1. Define the vertices representing objects or entities.
+2. Create edges representing relationships between them.
+3. Store the connections using an adjacency list or adjacency matrix.
+4. Use algorithms to explore the graph, find paths, or identify relationships.
+5. Update vertices, edges, or weights as the network changes.
 
-Data structures are not separate from algorithms and AI — they support them.
+Common types of graphs
 
-## 6. Possible Challenges for Beginners
+- Undirected graph: Edges have no direction; a connection works both ways.
+- Directed graph: Edges have a direction, such as \\(A \rightarrow B\\).
+- Weighted graph: Edges carry values such as cost or distance.
+- Unweighted graph: Edges represent connections without assigned weights.
+- Cyclic graph: Contains at least one cycle.
+- Acyclic graph: Contains no cycles. A directed acyclic graph (DAG) is especially useful for representing dependencies.
 
-- The names of the structures (stack, queue, dictionary, tree) can feel unfamiliar at first.
-- It is easy to memorise definitions without understanding when to use each structure.
-- Some learners feel that data structures are only important for advanced programming.
+Advantages
 
-**How we address these challenges:**
-- We use strong everyday analogies.
-- We focus on “what is this good for?” instead of only “how is it built?”.
-- We keep the language simple and avoid unnecessary technical detail.
-- We encourage learners to match structures to real situations.
+- Represents complex relationships naturally.
+- Supports pathfinding and network analysis.
+- Can model real-world systems with many interconnected entities.
 
-## 7. What Success Looks Like
+Disadvantages
 
-If a person who knew nothing about the topic can:
-- Explain what a data structure is in their own words
-- Name the main beginner structures (list, dictionary, stack, queue, simple tree)
-- Say what each structure is good for with a simple example
-- Choose a suitable structure for a simple situation
-- Feel less afraid of the subject
+- Can require substantial memory for dense graphs.
+- Searching and traversal can become computationally expensive for large networks.
+- Some graph problems require complex algorithms.
 
-…then the learning goals for Data Structures have been reached.
+Applications
 
-## 8. Final Note
+- Social networks.
+- Road and transportation networks.
+- Computer networks.
+- Recommendation systems.
+- Project scheduling and dependency management.
+- Knowledge representation in AI.
 
-These learning goals and explanations will guide everything created for the Data Structures part of the project — the explanations, the examples, and the simple exercises.  
+## 5. Comparison of Trees and Graphs
 
-Keeping them simple and clear is the most important part, because the audience is starting from zero.
+| Feature              | Tree                        | Graph                                  |
+| -------------------- | --------------------------- | -------------------------------------- |
+| Organization         | Hierarchical                | Network-like                           |
+| Connections          | Parent-child relationships  | General vertex-to-vertex relationships |
+| Root                 | Has a root in a rooted tree | No root required                       |
+| Cycles               | No cycles                   | May contain cycles                     |
+| Connectivity         | Connected by definition     | May be connected or disconnected       |
+| Typical applications | File systems, search trees  | Social networks, routes, dependencies  |
+
+## 6. How Non-Linear Data Structures Are Traversed
+
+Traversal is the process of visiting nodes in a data structure to inspect or process their data.
+
+Two widely used graph traversal algorithms are:
+
+- Breadth-First Search (BFS): Explores nearby nodes first, typically using a queue.
+- Depth-First Search (DFS): Explores one path as far as possible before backtracking, typically using a stack or recursion.
+
+For trees, common traversal methods include:
+
+- Preorder: Visit the root, then the left subtree, then the right subtree.
+- Inorder: Visit the left subtree, then the root, then the right subtree. This is commonly used with binary trees.
+- Postorder: Visit the left subtree, then the right subtree, then the root.
+- Level-order: Visit nodes level by level, typically using a queue.
+
+The choice of traversal depends on the task. For example, BFS can find a shortest path in an unweighted graph, while DFS is useful for exploring connected regions or analyzing dependencies.
+
+## 7. Worked Example: Finding a Path in a Graph
+
+Suppose a small transport network has four locations connected as follows:
+
+- A connects to B and C.
+- B connects to D.
+- C connects to D.
+
+Represent the network as:
+
+Task: Find a path from A to D using BFS, exploring B before C.
+
+Step 1: Start at A. Add its unvisited neighbors B and C to the queue.
+
+Queue: `[B, C]`
+
+Step 2: Visit B. Its neighbor D has not been visited, so discover D.
+
+Queue: `[C, D]`
+
+Step 3: Visit C. D has already been discovered, so do not add it again.
+
+Queue: `[D]`
+
+Step 4: Visit D. The target has been found.
+
+Expected result: A shortest path is `A → B → D`, containing two edges. The alternative path `A → C → D` also contains two edges.
+
+This example shows how BFS uses a queue to explore a graph level by level and find a shortest path in terms of the number of edges when all edges have equal cost.
+
+## 8. Learner Activity
+
+Consider a tree with root 10, left child 5, right child 15, and two children of node 5: 2 and 7.
+
+```
+        10
+       /  \
+      5    15
+     / \
+    2   7
+```
+
+Questions
+
+1. What is the root node?
+2. Which nodes are leaves?
+3. What is the preorder traversal?
+4. How does this tree differ from a graph?
+
+### Expected Answers
+
+1. The root is 10.
+2. The leaves are 2, 7, and 15.
+3. Preorder traversal: 10, 5, 2, 7, 15.
+4. A tree is a connected, acyclic hierarchical structure. A general graph may have cycles, multiple connections between nodes, and no designated root.
+
+## 9. Why Non-Linear Data Structures Matter
+
+Non-linear data structures are essential when data contains hierarchical relationships or complex networks. Trees help organize information into levels and can support efficient search operations, while graphs represent interconnected systems and enable pathfinding and network analysis. These structures also support many AI applications, including knowledge graphs, search algorithms, decision trees, and recommendation systems.
+
+Understanding how trees and graphs represent relationships helps programmers choose appropriate structures and algorithms for complex problems.
+
+## References
+
+1. OpenDSA — Data Structures and Algorithms educational materials: [OpenDSA](https://opendsa-server.cs.vt.edu/?utm_source=chatgpt.com).
+2. Python Software Foundation — Python documentation on data structures: [Python Data Structures](https://docs.python.org/3/tutorial/datastructures.html?utm_source=chatgpt.com).
+3. VisuAlgo — Interactive visualizations of data structures and algorithms: [VisuAlgo](https://visualgo.net/en?utm_source=chatgpt.com).
