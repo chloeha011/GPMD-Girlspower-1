@@ -43,18 +43,3 @@ All visuals should:
 - Match the explanations and examples in the CONTENT branch.
 - Include source attribution when external materials are used.
 
-## 5. Workflow
-
-1. Review the relevant learning content.
-2. Identify concepts that would benefit from visual explanation.
-3. Create diagrams or illustrations using suitable tools.
-4. Save files in the appropriate folder and link them to the relevant content.
-5. Review the visuals and update their status.
-6. Commit changes and record individual contributions.
-
-## 6. Next Steps
-
-- Create the planned visuals for all three topics.
-- Check consistency between visuals and written explanations.
-- Record sources and review outcomes.
-- Prepare the visuals for reuse in the Study Guide, PPT Slides, and Video Tutorials.
