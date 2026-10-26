@@ -1,38 +1,48 @@
-# Planned Examples, Demonstrations, Questions, or Activities
+# Planned Examples and Learner Activities
 
-To make the project easier to understand, we will use practical examples and simple activities.
+## 1. Purpose
 
-Activity 1: Searching Algorithms
+This document describes the examples and activities we plan to use to help beginners understand algorithms, data structures, and connectionist AI. The activities will give learners a chance to apply the ideas instead of only reading explanations.
 
-We can use the numbers 2, 5, 8, 12, and 16 to demonstrate how linear search and binary search find a particular number.
+## 2. Planned Examples
 
-Students can compare the two methods and discuss how they work.
+### 2.1 Algorithms
 
-Activity 2: Data Structures
+We will use a list of numbers to show how searching and sorting work. Learners can follow each step and compare the original list with the result.
 
-A stack of plates can demonstrate the concept of a stack. The last plate placed on top is the first one removed. This illustrates the Last In, First Out (LIFO) principle.
+### 2.2 Data Structures
 
-We can also use a queue of people waiting in line to explain the First In, First Out (FIFO) principle.
+We will use everyday examples to explain how data can be organized. For example, a list of movies can store information, while a graph can show connections between users and movies.
 
-Activity 3: Neural Networks
+### 2.3 Connectionist AI
 
-We can demonstrate how a neural network learns to recognize pictures of cats by learning patterns from training images.
+We will use a simple movie recommendation example to explain how a neural network can learn patterns from data and make predictions.
 
-The network makes predictions and adjusts its internal parameters during training to improve its results.
+## 3. Learner Activity: Build a Movie Recommendation System
 
-Activity 4: Connecting the Three Topics
+**Scenario:** Imagine you are helping to design a movie recommendation system. The system needs to find movies that match a user's interests.
 
-We can use image recognition as an example to explain how algorithms perform computational tasks, data structures organize information, and neural networks learn patterns from data.
+**Tasks:**
 
-## Questions for Discussion
+1. You have a list of movies with their genres and user ratings. Write simple pseudocode to find science-fiction movies rated 4 or higher.
+2. Choose a suitable data structure for storing the movie information. Explain why you chose it.
+3. Explain how a neural network could learn from users' previous ratings to recommend movies they may like.
+4. Suggest one improvement that could make the recommendations more useful.
 
-* Where do we use algorithms in everyday life?
-* Why do computers need data structures?
-* How can a neural network learn to recognize an image?
-* How are algorithms, data structures, and neural networks connected?
+## 4. Expected Learning Outcomes
 
-References
+After completing this activity, learners should be able to:
 
-1. Google — https://developers.google.com/machine-learning
-2. Microsoft — https://github.com/microsoft/AI-For-Beginners
-3. Microsoft Learn — https://learn.microsoft.com/en-us/training/modules/a-guide-to-artificial-intelligence/
+- Apply a simple algorithm to filter information.
+- Choose a data structure for a basic task and explain their choice.
+- Describe how a neural network can learn patterns from data.
+- Connect algorithms, data structures, and AI in one practical example.
+
+## 5. Checking Understanding
+
+Learners can compare their answers with the following points:
+
+- The algorithm should check each movie's genre and rating.
+- A list is suitable for storing a collection of movies; other structures may be useful depending on how the system searches or connects information.
+- A neural network can use previous ratings as training data to learn patterns in user preferences.
+- Possible improvements include collecting more user ratings, considering different genres, or updating recommendations when user preferences change.
