@@ -15,16 +15,16 @@ The content is designed for beginners and will serve as the foundation for the S
 - [04 — Examples and Learner Activities](ALGORITHMS/04_Examples_and_Learner_Activities.md)
 
 ### Data Structures
-- [01 — Introduction and Key Concepts](DATA STRUCTURE/01_Introduction_and_Key_Concepts.md)
-- [02 — Linear Data Structures](DATA_STRUCTURES/02_Linear_Data_Structures.md)
-- [03 — Non-Linear Data Structures](DATA_STRUCTURES/03_Non_Linear_Data_Structures.md)
-- [04 — Examples and Learner Activities](DATA_STRUCTURES/04_Examples_and_Learner_Activities.md)
+- [01 — Introduction and Key Concepts](DATA-STRUCTURE/01_Introduction_and_Key_Concepts.md)
+- [02 — Linear Data Structures](DATA-STRUCTURES/02_Linear_Data_Structures.md)
+- [03 — Non-Linear Data Structures](DATA-STRUCTURES/03_Non_Linear_Data_Structures.md)
+- [04 — Examples and Learner Activities](DATA-STRUCTURES/04_Examples_and_Learner_Activities.md)
 
 ### Connectionist AI
-- [01 — Introduction to Connectionist AI](Connectionist_AI/01_Introduction_to_Connectionist_AI.md)
-- [02 — Basic Neural Network Structure](Connectionist_AI/02_Basic_Neural_Network_Structure.md)
-- [03 — How Neural Networks Learn](Connectionist_AI/03_How_Neural_Networks_Learn.md)
-- [04 — Applications and Learner Activities](Connectionist_AI/04_Applications_and_Learner_Activities.md)
+- [01 — Introduction to Connectionist AI](CONNECTIONIST-AI/01_Introduction_to_Connectionist_AI.md)
+- [02 — Basic Neural Network Structure](CONNECTIONIST-AI/02_Basic_Neural_Network_Structure.md)
+- [03 — How Neural Networks Learn](CONNECTIONIST-AI/03_How_Neural_Networks_Learn.md)
+- [04 — Applications and Learner Activities](CONNECTIONIST-AI/04_Applications_and_Learner_Activities.md)
 
 ## 3. Content Development Status
 
