@@ -31,10 +31,6 @@ The content is designed for beginners and will serve as the foundation for the S
 
 ## 3. Content Development Status
 
-The files are being developed as the first version of the learning material for Stage 1.
-
-**Current status:** Drafted — needs peer review and source verification.
-
 The content aims to include:
 - Beginner-friendly explanations and definitions.
 - Worked examples and visual explanations.
