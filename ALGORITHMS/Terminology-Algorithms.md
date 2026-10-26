@@ -1,4 +1,4 @@
-Terminology: Algorithms
+# Terminology: Algorithms
 
 This section introduces the key terms related to algorithms and explains them in simple language to help beginners understand how algorithms work.
 
@@ -90,7 +90,7 @@ Big O notation describes how an algorithm’s resource requirements grow as the 
 
 Example: Linear search has a worst-case time complexity of O(n), while binary search has a worst-case time complexity of O(log n) on sorted data.
 
-References
+# References
 
 1. NIST — Dictionary of Algorithms and Data Structures: https://xlinux.nist.gov/dads/
 2. OpenDSA — Data Structures and Algorithms: https://opendsa.org/
