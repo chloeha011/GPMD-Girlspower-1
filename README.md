@@ -49,15 +49,15 @@ By the end of the learning module, learners should be able to:
 
 The project focuses on three major topics: **Algorithms, Data Structures, and Connectionist Artificial Intelligence**. The module is designed to help beginners understand these concepts through structured explanations, practical examples, visual materials, and learning activities.
 
-The `General/` folder contains five documents that define the module's learning objectives, content structure, prerequisites, planned activities, and development progress.
+The `general-documents/` folder in the `GENERAL` branch contains five documents that define the module's learning objectives, content structure, prerequisites, planned activities, and development progress.
 
 ### 3.1 Module Planning Documents
 
-- [Introduction and Learning Objectives](./General/01_Introduction_and_Learning_Objectives.md) — introduces the module, its purpose, and the expected learning outcomes.
-- [Major Topics and Subtopics](./General/02_Major_Topics_and_Subtopics.md) — outlines the main topics, subtopics, and their logical learning sequence.
-- [Prerequisite Knowledge](./General/03_Prerequisite_Knowledge.md) — identifies the foundational knowledge learners need before starting the module.
-- [Planned Examples and Learner Activities](./General/04_Planned_Examples_and_Learner_Activities.md) — describes planned examples, demonstrations, practice tasks, and application questions.
-- [Development Status and Task Plan](./General/05_Development_Status_and_Task_Plan.md) — tracks the progress of each section, completed work, and remaining tasks.
+- [Introduction and Learning Objectives](./general-documents/01_Introduction_and_Learning_Objectives.md) — introduces the module, its purpose, and expected learning outcomes.
+- [Major Topics and Subtopics](./general-documents/02_Major_Topics_and_Subtopics.md) — outlines the main topics, subtopics, and their logical learning sequence.
+- [Prerequisite Knowledge](./general-documents/03_Prerequisite_Knowledge.md) — identifies the foundational knowledge learners need before starting the module.
+- [Planned Examples and Learner Activities](./general-documents/04_Planned_Examples_and_Learner_Activities.md) — describes planned examples, demonstrations, practice tasks, and application questions.
+- [Development Status and Task Plan](./general-documents/05_Development_Status_and_Task_Plan.md) — tracks the progress of each section, completed work, and remaining tasks.
 
 Together, these documents provide an overview of the module's design and guide the development of the learning materials.
 
