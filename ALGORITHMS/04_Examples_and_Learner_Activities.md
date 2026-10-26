@@ -1,6 +1,5 @@
 # Algorithms: Examples and Learner Activities
 
-**Status:** Drafted — needs peer review
 
 ## 1. Learning Objectives
 
