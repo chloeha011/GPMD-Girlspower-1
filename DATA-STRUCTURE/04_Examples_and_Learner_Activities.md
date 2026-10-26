@@ -1,104 +1,122 @@
-Terminology: Data Structures
+# Data Structures: Examples and Learner Activities
 
-This section introduces the key terms related to data structures and explains them in simple language to help beginners understand how computers organize, store, and process information.
 
-1. Data Structure
+## 1. Learning Objectives
 
-A data structure is a way of organizing and storing data in a computer so that it can be accessed, modified, and processed efficiently.
+After completing this section, learners should be able to explain how data structures organize information, compare common data structures, and choose a suitable structure for a simple problem.
 
-Example: A list of student names is a simple way to organize information.
+## 2. Worked Example: Choosing a Data Structure
 
-2. Array
+Imagine you are developing a student management system. Different tasks may require different ways to store information.
 
-An array is a collection of elements stored in an ordered sequence. Each element can be accessed using its index or position.
+| Data Structure | Example | Why It Fits |
+|---|---|---|
+| Array | Students' exam scores | Stores items in order and allows access by index |
+| Linked List | A sequence of tasks | Connects items through links between nodes |
+| Stack | Undo actions in a text editor | The last action added is the first one removed |
+| Queue | Students waiting for help | The first person waiting is usually served first |
+| Tree | Folders on a computer | Represents hierarchical relationships |
+| Graph | Connections between friends | Represents relationships between connected items |
 
-Example: [10, 20, 30, 40] is an array of numbers.
+No single data structure is best for every situation. The right choice depends on how the information will be stored, accessed, and changed.
 
-3. Linked List
+## 3. Worked Example: Stack vs. Queue
 
-A linked list is a collection of elements called nodes, where each node contains data and a link to another node.
+A **stack** follows Last In, First Out (LIFO). A **queue** follows First In, First Out (FIFO).
 
-Example: A list of tasks can be represented as connected nodes, with each node pointing to the next task.
+**Stack example**
 
-4. Node
+Imagine stacking books on a desk. You place Book A, then Book B, then Book C on top.
 
-A node is an individual element in a data structure. Depending on the structure, it may contain data and links to other nodes.
+```text
+Top -> Book C
+       Book B
+       Book A
+```
 
-Example: In a linked list of student names, each node stores a name and a link to the next node.
+If you remove one book, Book C comes out first because it was added last.
 
-5. Stack
+**Queue example**
 
-A stack is a data structure that follows the Last In, First Out (LIFO) principle. The last element added is the first one removed.
+Imagine three students waiting in line: A, B, and C.
 
-Example: A stack of plates: the plate placed on top is usually the first one taken off.
+```text
+Front -> A -> B -> C <- Rear
+```
 
-6. Queue
+Student A is served first because they joined the queue first.
 
-A queue is a data structure that follows the First In, First Out (FIFO) principle. The first element added is the first one removed.
+## 4. Learner Activities
 
-Example: People waiting in line for a bus usually board in the order they arrive.
+Try answering these questions before checking the answers.
 
-7. Tree
+### Activity A: Choose the Data Structure
 
-A tree is a hierarchical data structure made up of nodes connected by edges. It begins with a root node and can contain parent and child nodes.
+Choose the most suitable data structure for each situation.
 
-Example: A computer’s folder system can be represented as a tree, with folders containing subfolders and files.
+1. Keeping track of the browser's Back button history.
+2. Managing customers waiting at a service counter.
+3. Representing a family tree.
+4. Representing routes between cities.
 
-8. Graph
+### Activity B: Understand the Operations
 
-A graph is a data structure made up of vertices (nodes) and edges (connections) between them. It can represent relationships between different objects.
+A stack is empty. The following operations are performed:
 
-Example: A social network can be represented as a graph, where people are nodes and their connections are edges.
+1. Push 10.
+2. Push 20.
+3. Push 30.
+4. Pop one item.
 
-9. Hash Table
+What value is removed, and what values remain in the stack?
 
-A hash table stores data as key-value pairs and uses a hash function to help locate values efficiently.
+### Activity C: Apply Your Knowledge
 
-Example: A student ID can serve as a key to retrieve a student’s information.
+A school wants to store student names in alphabetical order and frequently search for a particular student.
 
-10. Element
+1. What information should the data structure store?
+2. Why does keeping the names ordered help with searching?
+3. Is the data structure choice affected by how often names are added or removed?
 
-An element is an individual piece of data stored within a data structure.
+## 5. Answers and Explanations
 
-Example: In the array [5, 10, 15], the number 10 is one element.
+**Activity A**
 
-11. Index
+1. Stack — browser history commonly allows the most recently visited page to be returned from first.
+2. Queue — customers are generally served in the order they arrive.
+3. Tree — a family tree shows hierarchical relationships.
+4. Graph — cities can be represented as vertices and routes as edges.
 
-An index identifies the position of an element in an indexed data structure, such as an array. In many programming languages, indexing starts at zero.
+**Activity B**
 
-Example: In [10, 20, 30], the element 10 has index 0 in Python.
+The value **30** is removed. The stack then contains 20 on top of 10. This follows the LIFO principle: the last value added is the first value removed.
 
-12. Pointer
+**Activity C**
 
-A pointer is a value that refers to a location in memory. In some programming languages, pointers can be used to connect or access data stored in different memory locations.
+1. The structure should store student names as data items.
+2. Ordered names can make searching more efficient. For example, binary search can be used if the data is sorted and supports efficient access to the middle element.
+3. Yes. If names are frequently added or removed, the cost of maintaining the order should also be considered.
 
-Example: A linked-list node may contain a pointer to the next node.
+## 6. Key Takeaways
 
-13. Traversal
+- Data structures organize information so it can be used efficiently.
+- Arrays, linked lists, stacks, queues, trees, and graphs serve different purposes.
+- Stacks follow LIFO, while queues follow FIFO.
+- Choosing a data structure depends on the operations a problem requires.
+- A suitable structure can make a program easier to manage and more efficient.
 
-Traversal is the process of visiting elements or nodes in a data structure in a particular order.
+## 7. Resources and References
 
-Example: Traversing an array means visiting its elements one by one.
+1. **OpenDSA — Data Structures and Algorithms**  
+   https://opendsa-server.cs.vt.edu/  
+   A learning resource covering data structures, algorithms, and related concepts.
 
-14. Insertion
+2. **VisuAlgo**  
+   https://visualgo.net/en  
+   Provides visual demonstrations of common data structures and algorithms.
 
-Insertion is the operation of adding a new element to a data structure.
+3. **Programiz — Data Structures and Algorithms**  
+   https://www.programiz.com/dsa  
+   Offers beginner-friendly explanations and examples of common data structures.
 
-Example: Adding the number 25 to the array [10, 20, 30] produces [10, 20, 25, 30] if it is inserted before 30.
-
-15. Deletion
-
-Deletion is the operation of removing an element from a data structure.
-
-Example: Removing 20 from [10, 20, 30] produces [10, 30].
-
-References
-
-1. NIST — Dictionary of Algorithms and Data Structures:
-    https://xlinux.nist.gov/dads/
-2. OpenDSA — Data Structures and Algorithms:
-    https://opendsa.org/
-3. GeeksforGeeks — Data Structures:
-    https://www.geeksforgeeks.org/data-structures/
-4. Programiz — Data Structures and Algorithms:
-    https://www.programiz.com/dsa
+These resources are provided for further learning and verification. The team should check the relevant materials, confirm the examples and answers, and record the peer-review outcome before marking this file as checked.
