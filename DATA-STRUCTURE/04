@@ -1,1 +1,139 @@
+# DATA STRUCTURES: STUDY GUIDE, WORKED EXAMPLES, AND LEARNER ACTIVITIES
 
+**Topics:**
+1. Stack (LIFO)
+2. Queue (FIFO)
+3. Linked List
+4. Worked examples and real-life applications
+5. Learner activities with suggested solutions
+
+> **How to use:** Run the provided Python code in VS Code. Read the explanations printed in the terminal. Try the learner activities before checking the suggested solutions.
+
+---
+
+## 1. STACK: LAST IN, FIRST OUT (LIFO)
+
+A stack stores items so that the last item added is the first item removed. Imagine a pile of plates: you normally take the top plate first.
+
+### Worked Example
+```python
+stack = []
+print("Start with an empty stack:", stack)
+
+stack.append(10)
+print("After append(10):", stack)
+
+stack.append(20)
+print("After append(20):", stack)
+
+stack.append(30)
+print("After append(30):", stack)
+print("The top item is stack[-1]:", stack[-1])
+
+removed_item = stack.pop()
+print("pop() removes:", removed_item)
+print("Stack after pop():", stack)
+from collections import deque
+
+queue = deque()
+print("Start with an empty queue:", list(queue))
+
+queue.append("Alice")
+print("Alice joins:", list(queue))
+
+queue.append("Bob")
+print("Bob joins:", list(queue))
+
+queue.append("Charlie")
+print("Charlie joins:", list(queue))
+
+served_person = queue.popleft()
+print("popleft() serves:", served_person)
+print("Queue after serving:", list(queue))
+
+queue.append("David")
+print("David joins at the back:", list(queue))
+class Node:
+    """One node in a singly linked list."""
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+def display_linked_list(head):
+    """Print every value by following the links from the head node."""
+    current = head
+    values = []
+    while current is not None:
+        values.append(str(current.data))
+        current = current.next
+    print(" -> ".join(values) + " -> None")
+
+# Create nodes
+first = Node(10)
+second = Node(20)
+third = Node(30)
+
+# Link them together
+first.next = second
+second.next = third
+
+print("Original list:")
+display_linked_list(first)
+
+# Insert a new node with value 5 at the beginning
+new_node = Node(5)
+new_node.next = first
+first = new_node
+print("\nAfter inserting 5 at the beginning:")
+display_linked_list(first)
+## 4. COMPARING THE DATA STRUCTURES
+
+*   **Stack:**
+    *   Rule: LIFO (last in, first out)
+    *   Add: `append()`
+    *   Remove: `pop()`
+    *   Example use: Undo operations
+*   **Queue:**
+    *   Rule: FIFO (first in, first out)
+    *   Add: `append()`
+    *   Remove: `popleft()`
+    *   Example use: Waiting lines
+*   **Linked List:**
+    *   Structure: Nodes connected by references
+    *   Access: Follow links from the head
+    *   Example use: Learning how linked collections work
+
+There is no single best data structure for every situation. The right choice depends on how the program needs to store, access, add, or remove data.
+
+## 5. LEARNER ACTIVITIES
+
+Try each activity yourself before looking at the suggested solutions.
+
+*   **Activity 1 - Stack:** Starting stack: `[2, 4, 6]`. Task: Add 8, then remove one item. What is the final stack? (Hint: Use `append()` to add and `pop()` to remove).
+*   **Activity 2 - Queue:** Starting queue: `['Mia', 'Noah']`. Task: Add 'Liam', then serve one person. Who is served? (Hint: Use `append()` and `popleft()`).
+*   **Activity 3 - Linked List:** Starting list: `10 -> 20 -> 30 -> None`. Task: Create a node containing 5 and insert it at the beginning. (Hint: The new node should point to the old first node).
+*   **Activity 4 - Understanding:** Which structure follows LIFO, and which follows FIFO? Why must a linked list be traversed to find a value?
+
+## 6. SUGGESTED SOLUTIONS
+
+### Solution 1 - Stack
+```python
+activity_stack = [2, 4, 6]
+activity_stack.append(8)
+activity_stack.pop()
+print("Final stack:", activity_stack)
+activity_queue = deque(["Mia", "Noah"])
+activity_queue.append("Liam")
+served = activity_queue.popleft()
+print("Person served:", served)
+print("Queue remaining:", list(activity_queue))
+head = Node(10)
+head.next = Node(20)
+head.next.next = Node(30)
+
+new_head = Node(5)
+new_head.next = head
+head = new_head
+
+print("Updated linked list:")
+display_linked_list(head)
