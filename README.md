@@ -101,11 +101,8 @@ The repository contains the following learning resources:
 | Visual Guide | Provides guidance for developing clear and educational visuals |
 | Organization Guide | Explains how project information is organized |
 
-File names and locations may be updated as the project develops.
 
 ## 6. Current Progress
-
-**Current Stage:** Stage 2 — First Versions and Live Mini Lecture Preparation
 
 **Stage 1 Status:** Completed
 
