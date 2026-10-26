@@ -128,12 +128,12 @@ We aim to maintain clear communication, meaningful development records, and cons
 
 ## 9. Source Attribution and AI Use
 
-External sources used in the learning materials should be cited in the relevant sections and listed in the corresponding reference lists. Borrowed visuals and other external resources must also be appropriately credited.
+- **ChatGPT:** Brainstorming, content planning, and task breakdown. Significant AI assistance will be documented according to Section 6 of the Shared Assignment Rules.
+- **Google Docs:** Collaborative writing and editing.
+- **Google Sheets:** Task allocation and progress tracking.
+- **GitHub:** Markdown file management, branch organization, and contribution tracking.
 
-AI tools may be used to support research, brainstorming, drafting, and content organization. AI-generated suggestions must be reviewed and checked before being incorporated into the project.
-
-Significant AI assistance and the corresponding verification process are documented in the team's relevant AI-use records.
-
+External sources will be cited in `06_References_and_Resources.md`. Team members will review and verify AI-assisted content before using it.
 ---
 
 **Project Status:** Completed Stage 1, moving to stage 2
