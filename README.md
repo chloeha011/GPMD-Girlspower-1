@@ -1,23 +1,162 @@
-# ABOUT OUR GROUP
-Girlspower-1 (GPMD)
+# Algorithms, Data Structures, and Connectionist AI
 
-## Algorithms, data structure and connectionist AI
+## 1. Team Information
 
-Team’s member and Github usernames:
+**Team Name:** Girlspower-1 (GPMD)
 
-1820262329 Chloe: chloeha011
+**Project Topic:** Algorithms, Data Structures, and Connectionist Artificial Intelligence
 
-1820262349 Cassie: caxieding
+### Team Members
 
-1820262293 Adelina: adelina15
+| Student ID | Name | GitHub Username |
+|---|---|---|
+| 1820262329 | Chloe | [@chloeha011](https://github.com/chloeha011) |
+| 1820262349 | Cassie | [@caxieding](https://github.com/caxieding) |
+| 1820262293 | Adelina | [@adelina15](https://github.com/adelina15) |
+| 1820262322 | Nasiba Abdullaeva | [@abdullaevanasiba2008-arch](https://github.com/abdullaevanasiba2008-arch) |
+| 1820262295 | Tsolmon Munkhzaya | [@mnhzaya](https://github.com/mnhzaya) |
+| 1820262123 | Samira Muhutdinova | [@smukhutdinova2804-ops](https://github.com/smukhutdinova2804-ops) |
+| 1820262337 | Moad | [@weeetyyyy7-shit-it](https://github.com/weeetyyyy7-shit-it) |
 
-1820262322 Nasiba Abdullaeva: abdullaevanasiba2008-arch
+## 2. Project Overview
 
-1820262295 Tsolmon Munkhzaya: mnhzaya
+### Purpose
 
-1820262123 Samira Muhutdinova: smukhutdinova2804-ops
+This project aims to help beginners understand three fundamental areas of computer science: algorithms, data structures, and connectionist artificial intelligence (AI).
 
-1820262337 Moad: weeetyyyy7-shit-it
+Through clear explanations, practical examples, visual materials, and learning activities, we aim to make technical concepts easier to understand and apply.
 
+The project also explores how these three areas work together in real-world applications.
 
-Our team is currently exploring three key areas of computer science: algorithms, data structures, and connectionist AI. Through our research, we aim to understand how computational problems are solved efficiently, how data is organized and managed, and how neural networks learn from information. By studying these interconnected topics, we hope to build a solid foundation in computer science and gain a deeper understanding of modern AI technologies.
+### Intended Learners
+
+Our learning materials are designed for beginners who have little or no previous experience with computer science or artificial intelligence.
+
+No advanced programming knowledge is required. Basic computer literacy, logical thinking, and simple mathematical skills are sufficient to begin learning.
+
+### Learning Objectives
+
+By the end of the learning module, learners should be able to:
+
+- Explain what algorithms are and how they solve problems.
+- Understand basic searching and sorting algorithms.
+- Identify common data structures and describe their purposes.
+- Explain the basic structure and learning process of artificial neural networks.
+- Recognize real-world applications of connectionist AI.
+- Describe how algorithms, data structures, and AI work together in computer applications.
+
+## 3. Module Structure
+
+The module is organized into four connected sections.
+
+### A. Algorithms
+
+- Definition and basic concepts of algorithms.
+- Everyday examples of step-by-step problem-solving.
+- Searching algorithms: linear search and binary search.
+- Sorting algorithms.
+- Basic algorithm efficiency.
+
+### B. Data Structures
+
+- Definition and importance of data structures.
+- Arrays and linked lists.
+- Stacks and queues.
+- Basic concepts of trees and graphs.
+- Relationships between data structures and algorithms.
+
+### C. Connectionist Artificial Intelligence
+
+- Introduction to connectionist AI and neural networks.
+- Artificial neurons, layers, weights, and connections.
+- How neural networks learn from training data.
+- The learning process: inputs, predictions, errors, and parameter updates.
+- Applications such as image recognition, speech recognition, and recommendation systems.
+
+### D. Connections Between the Topics
+
+- How algorithms process information.
+- How data structures organize and store information.
+- How neural networks learn patterns and generate predictions.
+- How these components work together in real-world applications.
+
+## 4. Repository Organization
+
+The repository is organized into three main areas: General, Content, and Visuals.
+
+- **General:** Team information, project goals, learning objectives, module outline, and project organization.
+- **Content:** Explanations, terminology, prerequisites, worked examples, learning activities, and assessment questions.
+- **Visuals:** Diagrams, illustrations, charts, and other visual resources supporting the learning materials.
+
+Please refer to the corresponding folders and files in this repository for the latest content.
+
+## 5. Learning Materials
+
+The repository contains the following learning resources:
+
+| Resource | Purpose |
+|---|---|
+| Intended Learning Outcomes | Defines the expected learning outcomes |
+| Prerequisite Knowledge | Identifies the knowledge needed to begin |
+| Major Topics and Subtopics | Presents the module structure and learning sequence |
+| Explanations | Provides the main explanations of algorithms, data structures, and connectionist AI |
+| Terminology | Defines important technical terms |
+| Worked Example and Demonstration | Illustrates how a concept works step by step |
+| Learner Activities | Allows learners to apply concepts to practical scenarios |
+| Check Understanding Questions | Helps learners assess their understanding |
+| Summary and Expected Outcomes | Reviews key concepts and learning outcomes |
+| Visual Guide | Provides guidance for developing clear and educational visuals |
+| Organization Guide | Explains how project information is organized |
+
+File names and locations may be updated as the project develops.
+
+## 6. Current Progress
+
+**Stage:** GitHub and Markdown Content Development — V1.0
+
+The team has established a shared GitHub repository, organized the main project topics, and developed initial learning materials.
+
+Current work includes:
+
+- Drafting explanations of algorithms, data structures, and connectionist AI.
+- Defining learning objectives and prerequisite knowledge.
+- Preparing terminology, worked examples, and learner activities.
+- Researching and organizing visual materials.
+- Coordinating tasks and documenting team discussions.
+
+The current materials form the foundation for the Study Guide, PPT Slides, and Video Tutorials. They are still being reviewed and refined.
+
+## 7. Remaining Work
+
+The next steps are to:
+
+1. Review the accuracy, clarity, and consistency of the learning content.
+2. Align the module outline with the topics actually covered in the explanations.
+3. Integrate relevant visuals and provide appropriate source attribution.
+4. Complete peer review and document the review outcomes.
+5. Record individual contributions and provide evidence of repository development.
+6. Complete the relevant AI-use records and source documentation.
+7. Prepare the Markdown source snapshot, readable PDF, and submission report.
+8. Test the final submission package to ensure that all required files and assets are included.
+
+## 8. Development and Collaboration
+
+GitHub is our shared workspace for organizing project materials, coordinating contributions, and tracking changes throughout development.
+
+Team members contribute to the project through research, content development, visual planning, documentation, and review.
+
+We aim to maintain clear communication, meaningful development records, and consistent learning materials throughout the project.
+
+## 9. Source Attribution and AI Use
+
+External sources used in the learning materials should be cited in the relevant sections and listed in the corresponding reference lists. Borrowed visuals and other external resources must also be appropriately credited.
+
+AI tools may be used to support research, brainstorming, drafting, and content organization. AI-generated suggestions must be reviewed and checked before being incorporated into the project.
+
+Significant AI assistance and the corresponding verification process are documented in the team's relevant AI-use records.
+
+---
+
+**Project Status:** V1.0 learning content under development.
+
+This repository will continue to be updated as the team reviews the content and develops the final learning resources.
