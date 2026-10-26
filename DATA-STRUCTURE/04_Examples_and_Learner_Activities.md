@@ -118,5 +118,3 @@ The value **30** is removed. The stack then contains 20 on top of 10. This follo
 3. **Programiz — Data Structures and Algorithms**  
    https://www.programiz.com/dsa  
    Offers beginner-friendly explanations and examples of common data structures.
-
-These resources are provided for further learning and verification. The team should check the relevant materials, confirm the examples and answers, and record the peer-review outcome before marking this file as checked.
