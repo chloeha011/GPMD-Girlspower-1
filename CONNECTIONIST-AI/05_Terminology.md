@@ -1,4 +1,4 @@
-Terminology: Connectionist AI
+# Terminology: Connectionist AI
 
 This section introduces the key terms related to connectionist artificial intelligence (AI) and explains them in simple language to help beginners understand how neural networks work and learn from data.
 
@@ -92,7 +92,7 @@ Generalization is a neural network’s ability to apply patterns learned from tr
 
 Example: A model trained on many cat pictures can recognize a cat in a new picture it has never seen before.
 
-References
+# References
 
 1. IBM — What Is a Neural Network?
     https://www.ibm.com/think/topics/neural-networks
