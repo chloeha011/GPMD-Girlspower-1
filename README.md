@@ -8,23 +8,43 @@ The content is designed for beginners and will serve as the foundation for the S
 
 ## 2. Folder Structure
 
-- **Algorithms/** — Introduction to algorithms, searching and sorting, algorithm efficiency, and learner activities.
-- **Data_Structures/** — Introduction to data structures, linear and non-linear structures, and learner activities.
-- **Connectionist_AI/** — Introduction to connectionist AI, neural network structure, learning processes, and applications.
+### Algorithms
+- [01 — Introduction and Key Concepts](Algorithms/01_Introduction_and_Key_Concepts.md)
+- [02 — Searching and Sorting Algorithms](Algorithms/02_Searching_and_Sorting_Algorithms.md)
+- [03 — Algorithm Efficiency](Algorithms/03_Algorithm_Efficiency.md)
+- [04 — Examples and Learner Activities](Algorithms/04_Examples_and_Learner_Activities.md)
+
+### Data Structures
+- [01 — Introduction and Key Concepts](Data_Structures/01_Introduction_and_Key_Concepts.md)
+- [02 — Linear Data Structures](Data_Structures/02_Linear_Data_Structures.md)
+- [03 — Non-Linear Data Structures](Data_Structures/03_Non_Linear_Data_Structures.md)
+- [04 — Examples and Learner Activities](Data_Structures/04_Examples_and_Learner_Activities.md)
+
+### Connectionist AI
+- [01 — Introduction to Connectionist AI](Connectionist_AI/01_Introduction_to_Connectionist_AI.md)
+- [02 — Basic Neural Network Structure](Connectionist_AI/02_Basic_Neural_Network_Structure.md)
+- [03 — How Neural Networks Learn](Connectionist_AI/03_How_Neural_Networks_Learn.md)
+- [04 — Applications and Learner Activities](Connectionist_AI/04_Applications_and_Learner_Activities.md)
 
 ## 3. Content Development Status
 
-The files provide the first draft of the learning material for Stage 1. They include explanations, examples, visual representations, learner activities, suggested answers, and references.
+The files are being developed as the first version of the learning material for Stage 1.
 
 **Current status:** Drafted — needs peer review and source verification.
 
+The content aims to include:
+- Beginner-friendly explanations and definitions.
+- Worked examples and visual explanations.
+- Learner activities with suggested answers.
+- References for factual claims and borrowed materials.
+
 ## 4. Content Development Principles
 
-- Use clear, beginner-friendly explanations.
+- Follow a logical learning sequence.
 - Define technical terms when they first appear.
-- Include worked examples and activities that test understanding.
-- Provide answers or expected outcomes for learner activities.
-- Identify and verify references for factual claims and borrowed materials.
+- Use examples to demonstrate how concepts work.
+- Ensure that activities can be completed using the provided explanations.
+- Check the accuracy of examples, answers, references, and visuals.
 - Keep the content consistent with the team's approved module outline.
 
 ## 5. Next Steps
@@ -33,4 +53,4 @@ The files provide the first draft of the learning material for Stage 1. They inc
 2. Verify references and supporting visuals.
 3. Record peer-review outcomes and corrections.
 4. Update the development status of each file.
-5. Develop the reviewed Markdown content into the Study Guide, PPT Slides, and Video Tutorials in later stages.
+5. Use the reviewed Markdown content to develop the Study Guide, PPT Slides, and Video Tutorials in later stages.
