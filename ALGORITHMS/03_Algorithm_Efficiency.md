@@ -1,6 +1,6 @@
 # Algorithm Efficiency
 
-## 1. What Is Algorithm Efficiency?
+## 3.1. What Is Algorithm Efficiency?
 
 Algorithm efficiency describes how effectively an algorithm uses computational resources to solve a problem. The two main measures of efficiency are time complexity and space complexity.
 
@@ -9,7 +9,7 @@ Algorithm efficiency describes how effectively an algorithm uses computational r
 
 Evaluating algorithm efficiency helps developers compare different solutions and select the most appropriate algorithm for a particular problem.
 
-## 2. Big O Notation
+## 3.2. Big O Notation
 
 Big O notation describes the asymptotic growth of an algorithm's resource requirements as the input size increases. It helps analyse performance without relying on a specific computer or programming language.
 
@@ -26,7 +26,7 @@ Let `n` represent the number of elements in the input.
 
 Generally, algorithms with lower asymptotic growth rates scale better as input sizes become large. However, actual performance also depends on implementation, input characteristics, and hardware.
 
-## 3. Time Complexity
+## 3.3. Time Complexity
 
 Time complexity describes how an algorithm's computational work changes as the input size increases.
 
@@ -42,7 +42,7 @@ For example, linear search has O(1) best-case time complexity when the target is
 
 Understanding these cases helps developers evaluate an algorithm's performance under different conditions.
 
-## 4. Space Complexity
+## 3.4. Space Complexity
 
 Space complexity measures how an algorithm's memory requirements grow with input size.
 
@@ -58,7 +58,7 @@ Examples include:
 
 Space complexity is particularly important when processing large datasets or running applications on devices with limited memory.
 
-## 5. Time Efficiency vs. Space Efficiency
+## 3.5. Time Efficiency vs. Space Efficiency
 
 Time and space efficiency are different aspects of algorithm performance.
 
@@ -68,7 +68,7 @@ For example, merge sort typically has O(n log n) time complexity and O(n) auxili
 
 Developers must therefore consider both execution time and memory consumption when choosing an algorithm.
 
-## 6. Factors Affecting Algorithm Efficiency
+## 3.6. Factors Affecting Algorithm Efficiency
 
 Several factors influence the practical efficiency of an algorithm:
 
@@ -81,7 +81,7 @@ Several factors influence the practical efficiency of an algorithm:
 
 Asymptotic analysis provides a theoretical comparison, while benchmarking measures actual execution time and memory usage in a specific environment.
 
-## 7. Why Algorithm Efficiency Matters
+## 3.7. Why Algorithm Efficiency Matters
 
 Algorithm efficiency is important because it affects the scalability, responsiveness, and resource consumption of software applications.
 
@@ -96,7 +96,7 @@ Efficient algorithms can:
 
 For small inputs, a simple algorithm may be sufficient. For large inputs, selecting an algorithm with better asymptotic complexity can substantially improve performance.
 
-## 8. Conclusion
+## 3.8. Conclusion
 
 Algorithm efficiency evaluates how effectively an algorithm uses time and memory. Big O notation provides a standard way to describe how computational requirements grow as input size increases.
 
@@ -104,7 +104,7 @@ Understanding time complexity, space complexity, and best-case, average-case, an
 
 The most appropriate algorithm depends not only on theoretical complexity but also on input characteristics, memory constraints, implementation details, and the requirements of the application.
 
-## 9. References
+## 3.9. References
 
 1. Python Software Foundation. *Sorting Techniques*. Python Documentation.  
    https://docs.python.org/3/howto/sorting.html
