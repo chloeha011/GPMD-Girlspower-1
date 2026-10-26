@@ -132,6 +132,7 @@ We aim to maintain clear communication, meaningful development records, and cons
 - **Google Docs:** Collaborative writing and editing.
 - **Google Sheets:** Task allocation and progress tracking.
 - **GitHub:** Markdown file management, branch organization, and contribution tracking.
+
   External sources will be cited in [06_References_and_Resources](general-documents/06_References_and_Resources.md). Team members will review and verify AI-assisted content before using it.
 ---
 
