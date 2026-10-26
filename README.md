@@ -58,8 +58,9 @@ The `general-documents/` folder in the `GENERAL` branch contains five documents 
 - [Prerequisite Knowledge](./general-documents/03_Prerequisite_Knowledge.md) — identifies the foundational knowledge learners need before starting the module.
 - [Planned Examples and Learner Activities](./general-documents/04_Planned_Examples_and_Learner_Activities.md) — describes planned examples, demonstrations, practice tasks, and application questions.
 - [Development Status and Task Plan](./general-documents/05_Development_Status_and_Task_Plan.md) — tracks the progress of each section, completed work, and remaining tasks.
+- [References and Resources](./general-documents/06_References_and_Resources.md) — lists the sources, references, and learning resources used to develop the module.
 
-Together, these documents provide an overview of the module's design and guide the development of the learning materials.
+Together, these six documents provide an overview of the module's design, supporting resources, and development progress.
 
 ### 3.2 Main Learning Topics
 
