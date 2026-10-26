@@ -105,32 +105,18 @@ File names and locations may be updated as the project develops.
 
 ## 6. Current Progress
 
-**Stage:** GitHub and Markdown Content Development — V1.0
+**Current Stage:** Stage 2 — First Versions and Live Mini Lecture Preparation
 
-The team has established a shared GitHub repository, organized the main project topics, and developed initial learning materials.
+**Stage 1 Status:** Completed
 
-Current work includes:
+The team has completed the planning and content foundation stage, including establishing the GitHub repository, organizing project branches, outlining the learning module, and preparing the general planning documents.
 
-- Drafting explanations of algorithms, data structures, and connectionist AI.
-- Defining learning objectives and prerequisite knowledge.
-- Preparing terminology, worked examples, and learner activities.
-- Researching and organizing visual materials.
-- Coordinating tasks and documenting team discussions.
+The team is now moving on to Stage 2, focusing on developing the first versions of the Study Guide and Test Bank, PPT Slides, and Video Tutorials based on the shared Markdown content. The team will also prepare the live mini lecture, review the learning materials, and collect feedback for further improvement.
 
-The current materials form the foundation for the Study Guide, PPT Slides, and Video Tutorials. They are still being reviewed and refined.
+**Next Milestone:** Updating...
 
 ## 7. Remaining Work
 
-The next steps are to:
-
-1. Review the accuracy, clarity, and consistency of the learning content.
-2. Align the module outline with the topics actually covered in the explanations.
-3. Integrate relevant visuals and provide appropriate source attribution.
-4. Complete peer review and document the review outcomes.
-5. Record individual contributions and provide evidence of repository development.
-6. Complete the relevant AI-use records and source documentation.
-7. Prepare the Markdown source snapshot, readable PDF, and submission report.
-8. Test the final submission package to ensure that all required files and assets are included.
 
 ## 8. Development and Collaboration
 
@@ -150,6 +136,4 @@ Significant AI assistance and the corresponding verification process are documen
 
 ---
 
-**Project Status:** V1.0 learning content under development.
-
-This repository will continue to be updated as the team reviews the content and develops the final learning resources.
+**Project Status:** Complated Stage 1, moving to stage 2
