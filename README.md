@@ -72,36 +72,6 @@ The learning module covers the following topics:
 
 Each topic will be supported by explanations, worked examples, visual materials, and learner activities as the module develops.
 
-### A. Algorithms
-
-- Definition and basic concepts of algorithms.
-- Everyday examples of step-by-step problem-solving.
-- Searching algorithms: linear search and binary search.
-- Sorting algorithms.
-- Basic algorithm efficiency.
-
-### B. Data Structures
-
-- Definition and importance of data structures.
-- Arrays and linked lists.
-- Stacks and queues.
-- Basic concepts of trees and graphs.
-- Relationships between data structures and algorithms.
-
-### C. Connectionist Artificial Intelligence
-
-- Introduction to connectionist AI and neural networks.
-- Artificial neurons, layers, weights, and connections.
-- How neural networks learn from training data.
-- The learning process: inputs, predictions, errors, and parameter updates.
-- Applications such as image recognition, speech recognition, and recommendation systems.
-
-### D. Connections Between the Topics
-
-- How algorithms process information.
-- How data structures organize and store information.
-- How neural networks learn patterns and generate predictions.
-- How these components work together in real-world applications.
 
 ## 4. Repository Organization
 
