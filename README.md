@@ -9,10 +9,10 @@ The content is designed for beginners and will serve as the foundation for the S
 ## 2. Folder Structure
 
 ### Algorithms
-- [01 — Introduction and Key Concepts](Algorithms/01_Introduction_and_Key_Concepts.md)
-- [02 — Searching and Sorting Algorithms](Algorithms/02_Searching_and_Sorting_Algorithms.md)
-- [03 — Algorithm Efficiency](Algorithms/03_Algorithm_Efficiency.md)
-- [04 — Examples and Learner Activities](Algorithms/04_Examples_and_Learner_Activities.md)
+- [01 — Introduction and Key Concepts](ALGORITHMS/01_Introduction_and_Key_Concepts.md)
+- [02 — Searching and Sorting Algorithms](ALGORITHMS/02_Searching_and_Sorting_Algorithms.md)
+- [03 — Algorithm Efficiency](ALGORITHMS/03_Algorithm_Efficiency.md)
+- [04 — Examples and Learner Activities](ALGORITHMS/04_Examples_and_Learner_Activities.md)
 
 ### Data Structures
 - [01 — Introduction and Key Concepts](Data_Structures/01_Introduction_and_Key_Concepts.md)
