@@ -53,3 +53,7 @@ The content aims to include:
 3. Record peer-review outcomes and corrections.
 4. Update the development status of each file.
 5. Use the reviewed Markdown content to develop the Study Guide, PPT Slides, and Video Tutorials in later stages.
+
+   ---------------------------------------
+
+- Back to - **[GENERAL](https://github.com/chloeha011/GPMD-Girlspower-1/tree/GENERAL)** 
