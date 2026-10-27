@@ -19,3 +19,8 @@ The visuals will support our learning module and can later be used in the Study 
 - [Linked List Type](<./DATA-STRUCTURE/linked list type.png>)
 - [Queue Type](<./DATA-STRUCTURE/queue type.png>)
 
+   ---------------------------------------
+
+- Back to - **[GENERAL](https://github.com/chloeha011/GPMD-Girlspower-1/tree/GENERAL)** 
+
+
