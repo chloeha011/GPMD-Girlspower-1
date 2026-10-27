@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1120" viewBox="0 0 1000 1120">
+  <rect width="1000" height="1120" rx="24" fill="#F7F9FC"/>
+  <text x="500" y="52" font-family="Arial,sans-serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#17365D">ALGORITHMS VISUAL GUIDE</text>
+  <text x="500" y="80" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" fill="#53657D">Searching • Sorting • Algorithm Efficiency</text>
+
+  <!-- SEARCHING -->
+  <rect x="30" y="105" width="940" height="300" rx="18" fill="#EAF3FF" stroke="#BCD6FA" stroke-width="2"/>
+  <text x="55" y="145" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#174A8B">1. Searching Algorithms</text>
+  <text x="55" y="174" font-family="Arial,sans-serif" font-size="15" fill="#334B68">Find a target value in a list.</text>
+
+  <rect x="50" y="193" width="435" height="190" rx="12" fill="#FFFFFF"/>
+  <text x="70" y="222" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#174A8B">Linear Search</text>
+  <text x="70" y="247" font-family="Arial,sans-serif" font-size="14" fill="#334B68">Checks items one by one.</text>
+  <g font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#17365D">
+    <rect x="70" y="267" width="65" height="48" rx="5" fill="#F0F5FC" stroke="#8AAAD1"/>
+    <rect x="135" y="267" width="65" height="48" rx="5" fill="#F0F5FC" stroke="#8AAAD1"/>
+    <rect x="200" y="267" width="65" height="48" rx="5" fill="#B9E9C9" stroke="#42A66A" stroke-width="2"/>
+    <rect x="265" y="267" width="65" height="48" rx="5" fill="#F0F5FC" stroke="#8AAAD1"/>
+    <rect x="330" y="267" width="65" height="48" rx="5" fill="#F0F5FC" stroke="#8AAAD1"/>
+    <text x="102" y="297">3</text><text x="167" y="297">6</text>
+    <text x="232" y="297" font-weight="bold">8</text><text x="297" y="297">2</text><text x="362" y="297">9</text>
+  </g>
+  <text x="70" y="343" font-family="Arial,sans-serif" font-size="14" fill="#247747">Target 8 found at position 3.</text>
+  <text x="70" y="365" font-family="Arial,sans-serif" font-size="13" fill="#53657D">Time complexity: O(n)</text>
+
+  <rect x="505" y="193" width="445" height="190" rx="12" fill="#FFFFFF"/>
+  <text x="525" y="222" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#174A8B">Binary Search</text>
+  <text x="525" y="247" font-family="Arial,sans-serif" font-size="14" fill="#334B68">Repeatedly halves a sorted search range.</text>
+  <g font-family="Arial,sans-serif" font-size="16" text-anchor="middle" fill="#17365D">
+    <rect x="525" y="267" width="49" height="44" rx="4" fill="#F0F5FC" stroke="#8AAAD1"/>
+    <rect x="574" y="267" width="49" height="44" rx="4" fill="#F0F5FC" stroke="#8AAAD1"/>
+    <rect x="623" y="267" width="49" height="44" rx="4" fill="#F0F5FC" stroke="#8AAAD1"/>
+    <rect x="672" y="267" width="49" height="44" rx="4" fill="#D8E9FF" stroke="#8AAAD1"/>
+    <rect x="721" y="267" width="49" height="44" rx="4" fill="#F0F5FC" stroke="#8AAAD1"/>
+    <rect x="770" y="267" width="49" height="44" rx="4" fill="#B9E9C9" stroke="#42A66A" stroke-width="2"/>
+    <rect x="819" y="267" width="49" height="44" rx="4" fill="#F0F5FC" stroke="#8AAAD1"/>
+    <text x="549" y="294">2</text><text x="598" y="294">4</text><text x="647" y="294">6</text>
+    <text x="696" y="294">8</text><text x="745" y="294">10</text><text x="794" y="294" font-weight="bold">12</text><text x="843" y="294">14</text>
+  </g>
+  <text x="525" y="343" font-family="Arial,sans-serif" font-size="14" fill="#247747">Find 12: check 8, then 12.</text>
+  <text x="525" y="365" font-family="Arial,sans-serif" font-size="13" fill="#53657D">Time complexity: O(log n)</text>
+
+  <!-- SORTING -->
+  <rect x="30" y="425" width="940" height="340" rx="18" fill="#E8F8F2" stroke="#B5E5D5" stroke-width="2"/>
+  <text x="55" y="465" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#126451">2. Sorting Algorithms</text>
+  <text x="55" y="492" font-family="Arial,sans-serif" font-size="15" fill="#345E57">Arrange data in a chosen order, such as smallest to largest.</text>
+
+  <rect x="50" y="510" width="435" height="230" rx="12" fill="#FFFFFF"/>
+  <text x="70" y="542" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#126451">Bubble Sort</text>
+  <text x="70" y="566" font-family="Arial,sans-serif" font-size="14" fill="#345E57">Compare adjacent items and swap when needed.</text>
+  <g font-family="Arial,sans-serif" font-size="16" fill="#17365D">
+    <text x="70" y="603" font-weight="bold">Start</text>
+    <text x="70" y="632">[4, 2, 5, 1]</text>
+    <path d="M170 622 L198 622" stroke="#399B82" stroke-width="2.5"/>
+    <path d="M190 615 L198 622 L190 629" fill="none" stroke="#399B82" stroke-width="2.5"/>
+    <text x="210" y="603" font-weight="bold">After pass 1</text>
+    <text x="210" y="632">[2, 4, 1, 5]</text>
+    <path d="M320 622 L345 622" stroke="#399B82" stroke-width="2.5"/>
+    <path d="M337 615 L345 622 L337 629" fill="none" stroke="#399B82" stroke-width="2.5"/>
+    <text x="355" y="603" font-weight="bold">Final</text>
+    <text x="355" y="632">[1, 2, 4, 5]</text>
+  </g>
+  <text x="70" y="690" font-family="Arial,sans-serif" font-size="14" fill="#345E57">Repeated passes move larger values to the right.</text>
+  <text x="70" y="716" font-family="Arial,sans-serif" font-size="13" fill="#53657D">Typical time complexity: O(n²)</text>
+
+  <rect x="505" y="510" width="445" height="230" rx="12" fill="#FFFFFF"/>
+  <text x="525" y="542" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#126451">Selection Sort</text>
+  <text x="525" y="566" font-family="Arial,sans-serif" font-size="14" fill="#345E57">Find the smallest remaining value each pass.</text>
+  <g font-family="Arial,sans-serif" font-size="16" fill="#17365D">
+    <text x="530" y="603" font-weight="bold">Start</text>
+    <text x="530" y="632">[5, 3, 8, 2]</text>
+    <path d="M635 622 L661 622" stroke="#399B82" stroke-width="2.5"/>
+    <path d="M653 615 L661 622 L653 629" fill="none" stroke="#399B82" stroke-width="2.5"/>
+    <text x="675" y="603" font-weight="bold">Pass 1</text>
+    <text x="675" y="632">[2, 3, 8, 5]</text>
+    <path d="M785 622 L807 622" stroke="#399B82" stroke-width="2.5"/>
+    <path d="M799 615 L807 622 L799 629" fill="none" stroke="#399B82" stroke-width="2.5"/>
+    <text x="820" y="603" font-weight="bold">Final</text>
+    <text x="820" y="632">[2, 3, 5, 8]</text>
+  </g>
+  <text x="525" y="690" font-family="Arial,sans-serif" font-size="14" fill="#345E57">Place each minimum in its correct position.</text>
+  <text x="525" y="716" font-family="Arial,sans-serif" font-size="13" fill="#53657D">Time complexity: O(n²)</text>
+
+  <!-- EFFICIENCY -->
+  <rect x="30" y="785" width="940" height="300" rx="18" fill="#F0EDFF" stroke="#D0C7FC" stroke-width="2"/>
+  <text x="55" y="825" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#5140A1">3. Algorithm Efficiency</text>
+  <text x="55" y="852" font-family="Arial,sans-serif" font-size="15" fill="#514C75">Big O describes how resource needs grow as input size increases.</text>
+
+  <rect x="50" y="870" width="900" height="170" rx="12" fill="#FFFFFF"/>
+  <g font-family="Arial,sans-serif" fill="#263653">
+    <text x="75" y="902" font-size="17" font-weight="bold">Big O</text>
+    <text x="220" y="902" font-size="17" font-weight="bold">Meaning</text>
+    <text x="500" y="902" font-size="17" font-weight="bold">Example</text>
+    <line x1="70" y1="914" x2="930" y2="914" stroke="#D9DDEE"/>
+    <text x="75" y="943" font-size="16" font-weight="bold">O(1)</text>
+    <text x="220" y="943" font-size="15">Constant growth</text>
+    <text x="500" y="943" font-size="15">Access an array item by index</text>
+    <line x1="70" y1="956" x2="930" y2="956" stroke="#E6E8F0"/>
+    <text x="75" y="982" font-size="16" font-weight="bold">O(log n)</text>
+    <text x="220" y="982" font-size="15">Slow growth</text>
+    <text x="500" y="982" font-size="15">Binary search on sorted data</text>
+    <line x1="70" y1="995" x2="930" y2="995" stroke="#E6E8F0"/>
+    <text x="75" y="1021" font-size="16" font-weight="bold">O(n)</text>
+    <text x="220" y="1021" font-size="15">Linear growth</text>
+    <text x="500" y="1021" font-size="15">Linear search</text>
+  </g>
+  <rect x="50" y="1048" width="900" height="24" rx="8" fill="#DDD7FF"/>
+  <text x="500" y="1065" font-family="Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#5140A1">Remember: the best algorithm depends on the problem and its input.</text>
+</svg>
