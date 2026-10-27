@@ -19,18 +19,3 @@ The visuals will support our learning module and can later be used in the Study 
 - [Linked List Type](<./DATA-STRUCTURE/linked list type.png>)
 - [Queue Type](<./DATA-STRUCTURE/queue type.png>)
 
-  
-### Visual Materials
-
-**1. Algorithms**
-- [Searching, Sorting, and Efficiency](ALGORITHMS/searching-sorting-effiency.svg) — illustrates searching algorithms, sorting algorithms, and algorithm efficiency.
-
-**2. Connectionist AI**
-- [Connectionist AI Illustration](<CONNECTIONIST-AI/illustration of connectionist AI.png>) — provides a visual introduction to connectionist AI.
-
-**3. Data Structures**
-- [Array](<DATA-STRUCTURE/array type.png>) — illustrates the array data structure.
-- [Linked List](<DATA-STRUCTURE/linked list type.png>) — illustrates how nodes are connected in a linked list.
-- [Queue](<DATA-STRUCTURE/queue type.png>) — illustrates the queue structure and its basic organization.
-
-
