@@ -8,20 +8,35 @@ The visuals will support our learning module and can later be used in the Study 
 
 ## 2. Folder Structure
 
+The `VISUALS` branch contains visual materials for three main topics: Algorithms, Connectionist AI, and Data Structures.
+
 ```text
 VISUALS/
-├── README.md
-├── Algorithms/
-├── Data_Structures/
-├── Connectionist_AI/
-└── references.md
+├── ALGORITHMS/
+│   └── searching-sorting-effiency.svg
+├── CONNECTIONIST-AI/
+│   └── illustration of connectionist AI.png
+├── DATA-STRUCTURE/
+│   ├── array type.png
+│   ├── linked list type.png
+│   └── queue type.png
+└── README.md
 ```
 
-- **Algorithms:** Flowcharts, searching and sorting diagrams, and algorithm complexity charts.
-- **Data_Structures:** Illustrations of arrays, linked lists, stacks, queues, trees, and graphs.
-- **Connectionist_AI:** Neural network diagrams and illustrations of the training process.
-- **references.md:** Sources and attribution for external materials used.
+### Visual Materials
 
+**1. Algorithms**
+- [Searching, Sorting, and Efficiency](ALGORITHMS/searching-sorting-effiency.svg) — illustrates searching algorithms, sorting algorithms, and algorithm efficiency.
+
+**2. Connectionist AI**
+- [Connectionist AI Illustration](<CONNECTIONIST-AI/illustration of connectionist AI.png>) — provides a visual introduction to connectionist AI.
+
+**3. Data Structures**
+- [Array](<DATA-STRUCTURE/array type.png>) — illustrates the array data structure.
+- [Linked List](<DATA-STRUCTURE/linked list type.png>) — illustrates how nodes are connected in a linked list.
+- [Queue](<DATA-STRUCTURE/queue type.png>) — illustrates the queue structure and its basic organization.
+
+These visuals support the written learning materials and can be reused in the Study Guide, PPT Slides, and Video Tutorials.
 ## 3. Development Status
 
 Visual materials will be developed alongside the content in the corresponding sections.
