@@ -2,218 +2,237 @@
 
 ## 1. Definition
 
-A non-linear data structure is a type of data structure in which data elements are organized in a hierarchical or network-like arrangement rather than a single sequential order. Unlike linear data structures, where elements generally follow one logical path, non-linear data structures allow an element to connect to multiple other elements.
+A non-linear data structure organizes data in a hierarchical or network-like form rather than in one single sequence. A node can connect to more than one other node, allowing the structure to represent branching relationships and multiple possible paths.
 
-These connections create more complex relationships between data. For example, in a tree, one parent node can connect to several child nodes, while in a graph, a node can connect to many other nodes without following a strict hierarchy.
+The two main examples are **trees** and **graphs**. Trees represent hierarchical relationships, such as folders within a computer. Graphs represent general connections, such as roads between locations or friendships in a social network.
 
-Non-linear data structures are particularly useful when information has relationships that cannot be represented efficiently as a simple list. They are widely used in computer science for representing file systems, social networks, transportation routes, computer networks, and artificial intelligence models.
-
-A non-linear data structure defines both how data is organized and how elements are connected, which influences how data can be searched, traversed, inserted, deleted, and processed.
+Unlike linear structures such as arrays and queues, non-linear structures are useful when data has branching relationships or complex connections.
 
 ### Linear vs. Non-Linear Data Structures
 
-### Linear
-
-Elements follow one logical sequence.
-
-Example: array, linked list, stack, queue
-
-### Non-linear
-
-Elements can have multiple connections.
-
-Example: tree, graph
+- **Linear:** Elements follow one logical sequence. Examples include arrays, linked lists, stacks, and queues.
+- **Non-linear:** Elements can have branching or network-like connections. Examples include trees and graphs.
 
 ## 2. How Non-Linear Data Structures Work
 
-Non-linear data structures work by representing data as nodes and the connections between them. A node is an individual unit that stores data, while a connection represents a relationship between two nodes. Depending on the structure, these connections may be called edges, links, or parent-child relationships.
+Non-linear data structures are commonly described using **nodes** and **connections**.
 
-Unlike a linear structure, which can usually be traversed along one sequence, a non-linear structure may have multiple possible paths. Programs use specific traversal or searching algorithms to explore these connections systematically.
+- **Node:** An individual unit that stores data.
+- **Edge:** A connection between two nodes. In a tree, edges usually represent parent-child relationships.
+
+A program starts from a chosen node, such as the root of a tree or a starting vertex in a graph, and follows connections using a traversal or search algorithm.
 
 ### General Process
 
-1. Create nodes: Each node stores an individual data element.
-2. Establish connections: Nodes are connected according to the relationships in the data.
-3. Choose a starting point: For example, the root of a tree or a starting vertex in a graph.
-4. Traverse or search: The program follows connections according to an algorithm.
-5. Process or update data: Nodes and connections may be added, removed, or modified as needed.
+1. Create nodes to store the data.
+2. Connect nodes according to the relationships being represented.
+3. Choose a starting node when an operation requires one.
+4. Traverse or search the structure using a suitable algorithm.
+5. Add, remove, or update nodes and connections when the data changes.
 
 ### Memory Organization
 
-Non-linear data structures are commonly implemented using linked nodes, references, arrays, or combinations of these approaches.
+Non-linear structures can be stored in different ways:
 
-- Linked representation: Nodes store references to connected nodes. This is common in trees and adjacency-list graphs.
-- Array-based representation: Data is stored in arrays using index relationships. Binary heaps, for example, are commonly implemented this way.
-- Adjacency matrix: A two-dimensional array records whether pairs of graph vertices are connected.
+- **Linked representation:** Nodes store references to other nodes. This is common in trees and adjacency-list graphs.
+- **Array-based representation:** Values are stored in arrays and related through index positions. Binary heaps are commonly implemented this way.
+- **Adjacency matrix:** A two-dimensional array records whether pairs of graph vertices are connected. It can also store edge weights.
 
-The best representation depends on the structure, the operations required, and the amount of memory available.
+The choice of representation affects memory use and the speed of operations.
 
 ## 3. Characteristics of Non-Linear Data Structures
 
-Non-linear data structures have several important characteristics:
+- **Multiple connections:** A node may connect to several other nodes.
+- **Branching or network organization:** Data can form levels or interconnected networks.
+- **Different traversal orders:** Algorithms can visit nodes in different sequences.
+- **Relationship-based organization:** Useful for representing dependencies and connections.
+- **Flexible structure:** Many implementations allow nodes and connections to be added or removed.
+- **Implementation-dependent performance:** Search and update times depend on the structure, its representation, and the algorithm used.
 
-- Multiple connections: A node may connect to several other nodes.
-- Hierarchical or network organization: Data may form parent-child relationships or a general network.
-- Multiple traversal paths: Different algorithms may visit nodes in different orders.
-- Complex relationships: They can represent dependencies, relationships, and interconnected information.
-- Flexible structure: Nodes and connections can often be added or removed dynamically.
-- Traversal complexity: Searching and processing data depends on the structure, its representation, and the algorithm used.
+## 4. Main Types of Non-Linear Data Structures
 
-## 4. Categories of Non-Linear Data Structures
-
-The two main categories are trees and graphs. Other specialized structures, such as heaps and tries, are commonly classified as tree-based structures.
+The two main types are trees and graphs. Heaps and tries are specialized tree-based structures.
 
 ### 4.1 Trees
 
-A tree is a hierarchical data structure consisting of nodes connected by edges. It begins with a special node called the root, and other nodes are organized into parent-child relationships.
+A **tree** is a hierarchical structure made of nodes connected by edges. A rooted tree has one starting node called the **root**. Other nodes are arranged below it in parent-child relationships.
 
-A tree with \\(n\\) nodes has exactly \\(n-1\\) edges, provided it is a conventional non-empty tree.
+A conventional tree with \(n\) nodes has exactly \(n-1\) edges. It is connected and contains no cycles.
 
 ### Example of a Tree
 
-A is the root. B and C are its children. D, E, F, and G are leaf nodes.
+```
+        A
+       / \
+      B   C
+     / \ / \
+    D  E F  G
+```
 
-Important terminology
+A is the root. B and C are children of A. D, E, F, and G are leaf nodes.
 
-- Root: The topmost node of the tree.
-- Parent: A node that has one or more children.
-- Child: A node directly connected below a parent.
-- Leaf: A node with no children.
-- Edge: A connection between two nodes.
-- Subtree: A node and the descendants beneath it.
-- Depth: The number of edges from the root to a particular node.
-- Height: The number of edges on the longest downward path from a node to a leaf.
+### Important Terminology
 
-How a tree works
+- **Root:** The topmost node of a rooted tree.
+- **Parent:** A node directly above one or more child nodes.
+- **Child:** A node directly below a parent.
+- **Leaf:** A node with no children.
+- **Edge:** A connection between two nodes.
+- **Subtree:** A node together with all its descendants.
+- **Depth:** The number of edges from the root to a particular node.
+- **Height:** The number of edges on the longest downward path from a node to a leaf. The height of a tree is the height of its root.
 
-1. Data is placed in nodes.
-2. A root node establishes the starting point.
+### How a Tree Works
+
+1. Data is stored in nodes.
+2. A root node provides the starting point.
 3. Other nodes are connected through parent-child relationships.
-4. A traversal algorithm visits nodes according to a defined order.
-5. Search or insertion operations follow the tree's rules to locate or organize data.
+4. A traversal algorithm visits nodes in a defined order.
+5. Search and insertion operations follow the rules of the particular tree type.
 
-Common types of trees
+### Common Types of Trees
 
-- Binary tree: Each node has at most two children.
-- Binary search tree (BST): Values in the left subtree are smaller than the node's value, and values in the right subtree are larger, under the standard distinct-key convention.
-- Heap: A complete binary tree that satisfies a heap-order property, such as each parent being greater than or equal to its children in a max-heap.
-- Trie: A tree-like structure that stores sequences, commonly strings, by their prefixes.
+- **Binary tree:** Each node has at most two children.
+- **Binary search tree (BST):** For the standard distinct-key version, values in the left subtree are smaller than the node's value, and values in the right subtree are larger.
+- **Heap:** A complete binary tree that follows a heap-order rule. In a max-heap, each parent is greater than or equal to its children; in a min-heap, each parent is less than or equal to its children.
+- **Trie:** A tree-like structure that stores sequences, commonly words, by shared prefixes.
 
-Advantages
+### Advantages
 
-- Represents hierarchical relationships naturally.
+- Represents hierarchical information naturally.
 - Can support efficient searching and insertion when appropriately structured.
-- Organizes information into meaningful levels.
+- Organizes information into clear levels.
 
-Disadvantages
+### Limitations
 
-- More complex to implement than simple linear structures.
-- An unbalanced search tree can have poor performance.
-- Traversal and memory management may require additional logic.
+- More complex to implement than basic linear structures.
+- An unbalanced binary search tree can become less efficient, with some operations taking O(n) time.
+- Traversal and memory management require additional logic.
 
-Applications
+### Applications
 
 - Computer file systems.
 - Organizational charts.
 - Database indexing.
-- Searching and sorting.
+- Search operations.
 - Autocomplete and word prediction.
 
 ### 4.2 Graphs
 
-A graph is a non-linear data structure consisting of vertices (also called nodes) and edges that connect pairs of vertices. Unlike a tree, a graph can contain cycles, and a node may connect to many others without following a parent-child hierarchy.
+A **graph** is a non-linear data structure consisting of **vertices** (also called nodes) and **edges** that connect pairs of vertices. Unlike a tree, a general graph can contain cycles, and a vertex can connect to many others without following a parent-child hierarchy.
 
 A graph is commonly represented as:
 
-\\[ G=(V,E) \\]
+\[
+G = (V, E)
+\]
 
 where:
 
-- \\(V\\) is the set of vertices.
-- \\(E\\) is the set of edges connecting vertices.
+- \(V\) is the set of vertices.
+- \(E\) is the set of edges connecting vertices.
 
 ### Example of a Graph
 
-Each edge represents a relationship. Multiple paths can connect the same parts of a network.
+```
+A ----- B
+|       |
+|       |
+C ----- D
+```
 
-Important terminology
+Each letter represents a vertex, and each line represents an edge. The connections create more than one possible path between some vertices.
 
-- Vertex: An individual node in the graph.
-- Edge: A connection between two vertices.
-- Adjacent vertices: Vertices directly connected by an edge.
-- Degree: The number of edges incident to a vertex in an undirected graph.
-- Path: A sequence of vertices connected by edges.
-- Cycle: A path that returns to its starting vertex without repeating intermediate vertices.
-- Weight: A value assigned to an edge, such as distance, cost, or time.
+### Important Terminology
 
-How a graph works
+- **Vertex:** An individual node in a graph.
+- **Edge:** A connection between two vertices.
+- **Adjacent vertices:** Two vertices connected directly by an edge.
+- **Degree:** The number of edges connected to a vertex in an undirected graph.
+- **Path:** A sequence of vertices connected by edges.
+- **Cycle:** A path that starts and ends at the same vertex.
+- **Weight:** A value assigned to an edge, such as distance, cost, or time.
 
-1. Define the vertices representing objects or entities.
-2. Create edges representing relationships between them.
+### How a Graph Works
+
+1. Define vertices to represent objects or entities.
+2. Create edges to represent relationships between them.
 3. Store the connections using an adjacency list or adjacency matrix.
 4. Use algorithms to explore the graph, find paths, or identify relationships.
-5. Update vertices, edges, or weights as the network changes.
+5. Update vertices, edges, or weights when the network changes.
 
-Common types of graphs
+### Common Types of Graphs
 
-- Undirected graph: Edges have no direction; a connection works both ways.
-- Directed graph: Edges have a direction, such as \\(A \rightarrow B\\).
-- Weighted graph: Edges carry values such as cost or distance.
-- Unweighted graph: Edges represent connections without assigned weights.
-- Cyclic graph: Contains at least one cycle.
-- Acyclic graph: Contains no cycles. A directed acyclic graph (DAG) is especially useful for representing dependencies.
+- **Undirected graph:** Edges have no direction; a connection works both ways.
+- **Directed graph:** Edges have a direction, such as \(A \rightarrow B\).
+- **Weighted graph:** Edges have values such as cost, distance, or time.
+- **Unweighted graph:** Edges represent connections without assigned weights.
+- **Cyclic graph:** Contains at least one cycle.
+- **Acyclic graph:** Contains no cycles. A directed acyclic graph (DAG) is often used to represent tasks or dependencies.
 
-Advantages
+### Advantages
 
 - Represents complex relationships naturally.
 - Supports pathfinding and network analysis.
-- Can model real-world systems with many interconnected entities.
+- Models real-world systems with many interconnected entities.
 
-Disadvantages
+### Limitations
 
-- Can require substantial memory for dense graphs.
-- Searching and traversal can become computationally expensive for large networks.
-- Some graph problems require complex algorithms.
+- An adjacency matrix can use substantial memory for a large, sparse graph.
+- Searching and traversal may become expensive for large networks.
+- Some graph problems require advanced algorithms.
 
-Applications
+### Applications
 
 - Social networks.
 - Road and transportation networks.
 - Computer networks.
 - Recommendation systems.
 - Project scheduling and dependency management.
-- Knowledge representation in AI.
+- Knowledge representation in artificial intelligence.
 
 ## 5. Comparison of Trees and Graphs
 
-| Feature              | Tree                        | Graph                                  |
-| -------------------- | --------------------------- | -------------------------------------- |
-| Organization         | Hierarchical                | Network-like                           |
-| Connections          | Parent-child relationships  | General vertex-to-vertex relationships |
-| Root                 | Has a root in a rooted tree | No root required                       |
-| Cycles               | No cycles                   | May contain cycles                     |
-| Connectivity         | Connected by definition     | May be connected or disconnected       |
-| Typical applications | File systems, search trees  | Social networks, routes, dependencies  |
+| Feature | Tree | General Graph |
+| --- | --- | --- |
+| Organization | Hierarchical | Network-like |
+| Connections | Parent-child relationships | General vertex-to-vertex relationships |
+| Root | A rooted tree has one root | No root is required |
+| Cycles | No cycles | May contain cycles |
+| Connectivity | Connected by definition | May be connected or disconnected |
+| Number of edges | A tree with \(n\) nodes has \(n-1\) edges | Depends on the graph |
+| Typical applications | File systems, search trees | Social networks, routes, dependencies |
 
-## 6. How Non-Linear Data Structures Are Traversed
+A tree is a special type of graph: it is connected and has no cycles. However, not every graph is a tree.
 
-Traversal is the process of visiting nodes in a data structure to inspect or process their data.
+## 6. Traversal of Non-Linear Data Structures
 
-Two widely used graph traversal algorithms are:
+**Traversal** is the process of visiting nodes in a data structure to inspect or process their data. Since non-linear structures can branch or contain multiple paths, algorithms are used to determine the order in which nodes are visited.
 
-- Breadth-First Search (BFS): Explores nearby nodes first, typically using a queue.
-- Depth-First Search (DFS): Explores one path as far as possible before backtracking, typically using a stack or recursion.
+### 6.1 Breadth-First Search (BFS)
 
-For trees, common traversal methods include:
+BFS explores nodes level by level, visiting nearby nodes before moving farther away. It typically uses a **queue** to keep track of which node to visit next.
 
-- Preorder: Visit the root, then the left subtree, then the right subtree.
-- Inorder: Visit the left subtree, then the root, then the right subtree. This is commonly used with binary trees.
-- Postorder: Visit the left subtree, then the right subtree, then the root.
-- Level-order: Visit nodes level by level, typically using a queue.
+### 6.2 Depth-First Search (DFS)
 
-The choice of traversal depends on the task. For example, BFS can find a shortest path in an unweighted graph, while DFS is useful for exploring connected regions or analyzing dependencies.
+DFS explores one path as far as possible before returning to explore another path. It typically uses a **stack** or recursion.
 
-## 7. Worked Example: Finding a Path in a Graph
+### Common Tree Traversal Methods
+
+For a binary tree, common traversal methods include:
+
+- **Preorder:** Visit the root, then the left subtree, then the right subtree.
+- **Inorder:** Visit the left subtree, then the root, then the right subtree.
+- **Postorder:** Visit the left subtree, then the right subtree, then the root.
+- **Level-order:** Visit nodes level by level, typically using a queue.
+
+The choice of traversal depends on the task. For example, BFS can find a shortest path in an unweighted graph, while DFS is useful for exploring connected regions and checking relationships.
+
+### Traversal Complexity
+
+For a graph represented with an adjacency list, BFS and DFS take \(O(V + E)\) time, where \(V\) is the number of vertices and \(E\) is the number of edges. This is because the algorithms visit vertices and examine edges. With an adjacency matrix, traversal commonly takes \(O(V^2)\) time.
+
+## 7. Worked Example: Finding a Shortest Path Using BFS
 
 Suppose a small transport network has four locations connected as follows:
 
@@ -221,31 +240,39 @@ Suppose a small transport network has four locations connected as follows:
 - B connects to D.
 - C connects to D.
 
-Represent the network as:
+The network can be represented as:
 
-Task: Find a path from A to D using BFS, exploring B before C.
+```
+    A
+   / \
+  B   C
+   \ /
+    D
+```
 
-Step 1: Start at A. Add its unvisited neighbors B and C to the queue.
+**Task:** Find a shortest path from A to D using BFS, exploring B before C.
 
-Queue: `[B, C]`
+1. **Start at A.** Add its unvisited neighbors B and C to the queue.
 
-Step 2: Visit B. Its neighbor D has not been visited, so discover D.
+   Queue: `[B, C]`
 
-Queue: `[C, D]`
+2. **Visit B.** Discover D and add it to the queue.
 
-Step 3: Visit C. D has already been discovered, so do not add it again.
+   Queue: `[C, D]`
 
-Queue: `[D]`
+3. **Visit C.** D has already been discovered, so do not add it again.
 
-Step 4: Visit D. The target has been found.
+   Queue: `[D]`
 
-Expected result: A shortest path is `A → B → D`, containing two edges. The alternative path `A → C → D` also contains two edges.
+4. **Visit D.** The target has been reached.
 
-This example shows how BFS uses a queue to explore a graph level by level and find a shortest path in terms of the number of edges when all edges have equal cost.
+**Expected result:** One shortest path is `A → B → D`, which contains two edges. The alternative path `A → C → D` also contains two edges.
+
+This example shows how BFS explores a graph level by level. In an unweighted graph, BFS finds a path with the fewest edges.
 
 ## 8. Learner Activity
 
-Consider a tree with root 10, left child 5, right child 15, and two children of node 5: 2 and 7.
+Consider the following tree:
 
 ```
         10
@@ -255,28 +282,30 @@ Consider a tree with root 10, left child 5, right child 15, and two children of 
     2   7
 ```
 
-Questions
+### Questions
 
 1. What is the root node?
 2. Which nodes are leaves?
 3. What is the preorder traversal?
-4. How does this tree differ from a graph?
+4. What is the inorder traversal?
+5. How does this tree differ from a general graph?
 
 ### Expected Answers
 
 1. The root is 10.
 2. The leaves are 2, 7, and 15.
-3. Preorder traversal: 10, 5, 2, 7, 15.
-4. A tree is a connected, acyclic hierarchical structure. A general graph may have cycles, multiple connections between nodes, and no designated root.
+3. Preorder: 10, 5, 2, 7, 15.
+4. Inorder: 2, 5, 7, 10, 15.
+5. This tree is connected and has no cycles, with a clear parent-child hierarchy. A general graph may contain cycles, may be disconnected, and does not require a root.
 
 ## 9. Why Non-Linear Data Structures Matter
 
-Non-linear data structures are essential when data contains hierarchical relationships or complex networks. Trees help organize information into levels and can support efficient search operations, while graphs represent interconnected systems and enable pathfinding and network analysis. These structures also support many AI applications, including knowledge graphs, search algorithms, decision trees, and recommendation systems.
+Non-linear data structures are essential when information contains hierarchical relationships or complex networks. Trees organize information into levels and can support efficient search operations when appropriately structured. Graphs represent interconnected systems and support pathfinding and network analysis.
 
-Understanding how trees and graphs represent relationships helps programmers choose appropriate structures and algorithms for complex problems.
+These structures are also important in artificial intelligence and computing applications, including decision trees, knowledge graphs, recommendation systems, and dependency analysis. Understanding their organization helps programmers choose suitable structures and algorithms for complex problems.
 
 ## References
 
-1. OpenDSA — Data Structures and Algorithms educational materials: [OpenDSA](https://opendsa-server.cs.vt.edu/?utm_source=chatgpt.com).
-2. Python Software Foundation — Python documentation on data structures: [Python Data Structures](https://docs.python.org/3/tutorial/datastructures.html?utm_source=chatgpt.com).
-3. VisuAlgo — Interactive visualizations of data structures and algorithms: [VisuAlgo](https://visualgo.net/en?utm_source=chatgpt.com).
+1. OpenDSA. *Data Structures and Algorithms*. Virginia Tech. https://opendsa-server.cs.vt.edu/
+2. Cormen, T. H., Leiserson, C. E., Rivest, R. L., and Stein, C. (2022). *Introduction to Algorithms* (4th ed.). MIT Press.
+3. VisuAlgo. *Data Structures and Algorithms Visualizations*. https://visualgo.net/en
