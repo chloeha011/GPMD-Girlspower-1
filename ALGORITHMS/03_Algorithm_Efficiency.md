@@ -2,115 +2,122 @@
 
 ## 3.1. What Is Algorithm Efficiency?
 
-Algorithm efficiency describes how effectively an algorithm uses computational resources to solve a problem. The two main measures of efficiency are time complexity and space complexity.
+Algorithm efficiency describes how effectively an algorithm uses computer resources to solve a problem. The two main measures are **time complexity** and **space complexity**.
 
-- **Time complexity** measures how the number of operations grows as the input size increases.
-- **Space complexity** measures how memory requirements grow as the input size increases.
+- **Time complexity:** Measures how the amount of work an algorithm performs changes as the input size increases.
+- **Space complexity:** Measures how much memory an algorithm needs as the input size increases.
 
-Evaluating algorithm efficiency helps developers compare different solutions and select the most appropriate algorithm for a particular problem.
+Understanding efficiency helps developers compare different solutions and choose suitable algorithms for different problems.
 
 ## 3.2. Big O Notation
 
-Big O notation describes the asymptotic growth of an algorithm's resource requirements as the input size increases. It helps analyse performance without relying on a specific computer or programming language.
+**Big O notation** describes how an algorithm's resource requirements grow as the input size increases. It helps compare algorithms without depending on a specific computer or programming language.
 
 Let `n` represent the number of elements in the input.
 
 | Complexity | Name | Description | Example |
 |---|---|---|---|
-| O(1) | Constant | The amount of work remains constant as input size grows. | Accessing an array element by index |
-| O(log n) | Logarithmic | The problem size is repeatedly reduced by a constant factor. | Binary search |
-| O(n) | Linear | The amount of work grows proportionally to input size. | Linear search |
-| O(n log n) | Linearithmic | The amount of work grows approximately as n multiplied by log n. | Merge sort |
-| O(n²) | Quadratic | The amount of work can grow proportionally to the square of input size. | Bubble sort |
-| O(2ⁿ) | Exponential | The amount of work can grow exponentially with input size. | Certain exhaustive recursive algorithms |
+| O(1) | Constant | Work does not grow with input size. | Accessing an array element by index |
+| O(log n) | Logarithmic | The amount of data is repeatedly reduced by a fixed proportion. | Binary search |
+| O(n) | Linear | Work grows in proportion to input size. | Linear search |
+| O(n log n) | Linearithmic | Work grows slightly faster than linear growth. | Merge sort |
+| O(n²) | Quadratic | Work grows roughly with the square of input size. | Bubble sort (average and worst cases) |
+| O(2ⁿ) | Exponential | Work can grow extremely quickly as input size increases. | Some exhaustive recursive algorithms |
 
-Generally, algorithms with lower asymptotic growth rates scale better as input sizes become large. However, actual performance also depends on implementation, input characteristics, and hardware.
+In general, algorithms with lower growth rates perform better with large inputs. However, actual performance also depends on the algorithm's implementation and the computer's hardware.
 
 ## 3.3. Time Complexity
 
-Time complexity describes how an algorithm's computational work changes as the input size increases.
+**Time complexity** describes how the amount of work an algorithm performs changes as the input size increases.
 
-For example, an algorithm with O(n) complexity may perform approximately twice as much work when the input size doubles. An algorithm with O(n²) complexity may perform approximately four times as much work.
+For example:
+- An O(n) algorithm performs roughly twice as much work when the input size doubles.
+- An O(n²) algorithm may perform roughly four times as much work when the input size doubles.
+
+These are approximate growth patterns, not exact running times.
 
 Time complexity is commonly analysed using three cases:
 
-- **Best case:** The minimum work required under the most favourable input conditions.
-- **Average case:** The expected work for a specified distribution of inputs.
-- **Worst case:** An upper bound on the work required for inputs of a given size.
+- **Best case:** The least amount of work needed under the most favourable conditions.
+- **Average case:** The expected amount of work across a typical range of inputs.
+- **Worst case:** The greatest amount of work needed for an input of a given size.
 
-For example, linear search has O(1) best-case time complexity when the target is the first element. Its worst-case time complexity is O(n) when the target is last or absent.
+For example, in **linear search**, an algorithm checks elements one by one to find a target:
 
-Understanding these cases helps developers evaluate an algorithm's performance under different conditions.
+- Best case: O(1) — the target is the first element.
+- Average case: O(n) — the algorithm may need to check a large part of the list.
+- Worst case: O(n) — the target is the last element or is not present.
+
+These cases help developers understand how an algorithm performs in different situations.
 
 ## 3.4. Space Complexity
 
-Space complexity measures how an algorithm's memory requirements grow with input size.
+**Space complexity** describes how much memory an algorithm needs as the input size increases.
 
-It can include memory used to store data, temporary variables, additional data structures, and recursive function calls.
+This can include memory for the input, temporary variables, additional data structures, and function calls.
 
-**Auxiliary space** refers to the additional memory required by an algorithm, excluding the input itself.
+**Auxiliary space** refers specifically to the extra memory an algorithm uses, excluding the original input.
 
-Examples include:
+Examples of auxiliary space include:
 
-- **O(1) auxiliary space:** The algorithm uses a constant amount of additional memory.
-- **O(log n) auxiliary space:** Additional memory grows logarithmically with input size.
-- **O(n) auxiliary space:** Additional memory grows proportionally to input size.
+- **O(1):** Uses a fixed amount of extra memory, regardless of input size. Example: iterative linear search.
+- **O(log n):** Extra memory grows logarithmically. Example: recursive binary search, due to its function calls.
+- **O(n):** Extra memory grows in proportion to input size. Example: merge sort when sorting an array.
 
-Space complexity is particularly important when processing large datasets or running applications on devices with limited memory.
+Space efficiency is especially important when processing large datasets or running programs on devices with limited memory.
 
 ## 3.5. Time Efficiency vs. Space Efficiency
 
-Time and space efficiency are different aspects of algorithm performance.
+Time and space efficiency measure two different aspects of an algorithm.
 
-An algorithm may execute quickly but require substantial additional memory. Another algorithm may use less memory but perform more computational operations.
+An algorithm may run quickly but require more memory. Another may use less memory but require more processing.
 
-For example, merge sort typically has O(n log n) time complexity and O(n) auxiliary space when implemented for arrays. Some in-place sorting algorithms use less additional memory but may have different performance characteristics.
+This is known as the **time-space trade-off**.
 
-Developers must therefore consider both execution time and memory consumption when choosing an algorithm.
+For example, merge sort uses O(n) extra memory to sort an array efficiently. In contrast, in-place sorting algorithms work directly on the original data and generally require less additional memory, although their running times may differ.
+
+Developers should consider both execution time and memory usage when choosing an algorithm.
 
 ## 3.6. Factors Affecting Algorithm Efficiency
 
-Several factors influence the practical efficiency of an algorithm:
+Several factors can influence an algorithm's performance:
 
-- **Input size:** Larger datasets generally require more processing.
-- **Input characteristics:** Sorted, unsorted, or repetitive data may affect performance.
-- **Data structures:** Arrays, linked lists, trees, and hash tables have different operational costs.
-- **Implementation:** Different implementations of the same algorithm can have different overheads.
-- **Hardware:** Processor speed and available memory affect execution.
-- **Programming language:** Runtime behaviour and compiler or interpreter optimisations can influence performance.
+- **Input size:** Larger datasets usually require more processing.
+- **Input characteristics:** The order and arrangement of data can affect performance. For example, some sorting algorithms work faster when data is already partly sorted.
+- **Data structures:** Arrays, linked lists, trees, and hash tables have different ways of storing and accessing data.
+- **Implementation:** Different ways of writing the same algorithm can affect its performance.
+- **Hardware:** Processor speed and available memory influence execution.
+- **Programming language:** Different languages and their built-in optimisations can affect execution speed and memory usage.
 
-Asymptotic analysis provides a theoretical comparison, while benchmarking measures actual execution time and memory usage in a specific environment.
+**Asymptotic analysis** estimates how an algorithm performs as input size grows, while **benchmarking** measures its actual running time and memory usage on a computer.
 
 ## 3.7. Why Algorithm Efficiency Matters
 
-Algorithm efficiency is important because it affects the scalability, responsiveness, and resource consumption of software applications.
+Algorithm efficiency affects how quickly and reliably software applications work, especially when handling large amounts of data.
 
-Efficient algorithms can:
+Understanding efficiency helps developers:
 
 - Reduce processing time.
 - Improve application responsiveness.
 - Handle larger datasets.
-- Reduce unnecessary memory consumption.
-- Improve resource utilisation.
-- Support scalable software development.
+- Use memory more effectively.
+- Choose suitable solutions for different problems.
 
-For small inputs, a simple algorithm may be sufficient. For large inputs, selecting an algorithm with better asymptotic complexity can substantially improve performance.
+An algorithm that works well with a small input may become inefficient with a much larger one. Therefore, considering efficiency is an important part of designing effective software.
 
 ## 3.8. Conclusion
 
-Algorithm efficiency evaluates how effectively an algorithm uses time and memory. Big O notation provides a standard way to describe how computational requirements grow as input size increases.
+Algorithm efficiency helps developers understand how much time and memory a solution requires. Big O notation provides a common way to compare algorithms as input size increases.
 
-Understanding time complexity, space complexity, and best-case, average-case, and worst-case performance helps developers compare algorithms and make informed design decisions.
-
-The most appropriate algorithm depends not only on theoretical complexity but also on input characteristics, memory constraints, implementation details, and the requirements of the application.
+By understanding time complexity, space complexity, and different performance cases, developers can make better decisions when designing and selecting algorithms.
 
 ## 3.9. References
 
-1. Python Software Foundation. *Sorting Techniques*. Python Documentation.  
+1. Python Software Foundation. (n.d.). *Sorting Techniques*. Python Documentation.  
    https://docs.python.org/3/howto/sorting.html
 
-2. National Institute of Standards and Technology (NIST). *Dictionary of Algorithms and Data Structures*.  
-   https://www.nist.gov/itl/ssd/software-quality-group/dictionary-algorithms-and-data-structures
+2. Black, P. (1998). *Dictionary of Algorithms and Data Structures*. National Institute of Standards and Technology (NIST).  
+   https://www.nist.gov/publications/dictionary-algorithms-and-data-structures
 
-3. MIT OpenCourseWare. *Introduction to Algorithms*.  
-   https://ocw.mit.edu/
+3. Massachusetts Institute of Technology. (2020). *Introduction to Algorithms (6.006), Spring 2020*. MIT OpenCourseWare.  
+   https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/
