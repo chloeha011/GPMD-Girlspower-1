@@ -1,15 +1,23 @@
 # Algorithms: Examples and Learner Activities
 
-
 ## 1. Learning Objectives
 
-After completing this section, learners should be able to trace simple algorithms, apply searching and sorting methods, and explain which method is more suitable for a given problem.
+After completing this section, learners should be able to:
+
+- Follow the steps of simple algorithms.
+- Apply linear search, binary search, and basic sorting methods.
+- Explain how an algorithm reaches its result.
+- Choose a suitable algorithm for a given problem.
 
 ## 2. Worked Examples
 
+The following examples demonstrate how searching and sorting algorithms work step by step.
+
 ### Example 1: Linear Search
 
-Suppose we want to find `8` in the list `[3, 6, 8, 2, 9]`.
+Suppose we want to find `8` in the list:
+
+`[3, 6, 8, 2, 9]`
 
 Linear search checks each item from left to right until it finds the target.
 
@@ -20,73 +28,170 @@ Linear search checks each item from left to right until it finds the target.
           Found!
 ```
 
-The algorithm checks `3`, then `6`, and finally `8`. The target is found at position 3, so the search stops.
+**Steps:**
+
+1. Check `3`. It is not the target.
+2. Check `6`. It is not the target.
+3. Check `8`. The target is found, so the search stops.
+
+The target is found at position 3 after checking three elements.
+
+**Key point:** Linear search stops as soon as the target is found. It can also be used with unsorted data.
 
 ### Example 2: Binary Search
 
-Now find `12` in the sorted list `[2, 4, 6, 8, 10, 12, 14]`.
+Suppose we want to find `12` in the sorted list:
 
-1. Check the middle value, `8`. Since `12` is larger, search the right half.
-2. Check the middle of `[10, 12, 14]`, which is `12`.
-3. The target is found.
+`[2, 4, 6, 8, 10, 12, 14]`
 
-Binary search reduces the search range at each step. Unlike linear search, it requires the data to be sorted.
+Binary search repeatedly divides the search area in half.
+
+**Steps:**
+
+1. Check the middle value, `8`. Since `12` is greater than `8`, continue searching the right half.
+2. The remaining values are `[10, 12, 14]`. Check the middle value, `12`.
+3. The target is found, so the search stops.
+
+**Key point:** Binary search reduces the number of possible values at each step. However, the data must be sorted before using this method.
 
 ### Example 3: Sorting with Selection Sort
 
-Sort `[5, 3, 8, 2]` from smallest to largest.
+Suppose we want to sort the following list from smallest to largest:
+
+`[5, 3, 8, 2]`
+
+Selection sort repeatedly finds the smallest value in the unsorted part of the list and places it in the correct position.
 
 | Step | Action | List |
 |---|---|---|
 | Start | Original list | `[5, 3, 8, 2]` |
-| 1 | Find 2 and swap it with 5 | `[2, 3, 8, 5]` |
-| 2 | The smallest remaining value is 3, already in place | `[2, 3, 8, 5]` |
-| 3 | Find 5 and swap it with 8 | `[2, 3, 5, 8]` |
+| 1 | Find `2` and swap it with `5` | `[2, 3, 8, 5]` |
+| 2 | The smallest remaining value is `3`, already in place | `[2, 3, 8, 5]` |
+| 3 | Find `5` and swap it with `8` | `[2, 3, 5, 8]` |
 
-The final list is `[2, 3, 5, 8]`. Selection sort works by placing the smallest remaining item into its correct position.
+The final sorted list is:
+
+`[2, 3, 5, 8]`
+
+**Key point:** Selection sort places the smallest remaining value into its correct position during each pass.
 
 ## 3. Learner Activities
 
-Try these questions before checking the answers below.
+Complete the following activities before checking the suggested answers.
 
-**Activity A — Linear Search**
+### Activity A — Linear Search
 
-Find `7` in `[4, 1, 7, 3, 9]`.
+Find `7` in the list:
 
-- Which items do you check?
-- At what position is the target found?
+`[4, 1, 7, 3, 9]`
 
-**Activity B — Bubble Sort**
+1. Which items do you check, in order?
+2. At which position is the target found?
+3. How many elements are checked?
 
-Sort `[4, 2, 5, 1]` in ascending order. Show the list after each swap in the first pass.
+### Activity B — Bubble Sort
 
-**Activity C — Choosing an Algorithm**
+Sort the following list in ascending order using bubble sort:
 
-A school has 5,000 student IDs stored in sorted order. You need to find one ID.
+`[4, 2, 5, 1]`
 
-- Would you choose linear search or binary search?
-- Why?
+1. Compare adjacent elements and swap them when they are in the wrong order.
+2. Show the list after each swap in the first pass.
+3. What does the list look like after the first pass?
+
+### Activity C — Choosing an Algorithm
+
+A school has 5,000 student IDs stored in sorted order. You need to find one particular ID.
+
+1. Would you choose linear search or binary search?
+2. Why is this method more suitable?
+3. What condition must be met for this method to work?
+
+### Activity D — Selection Sort
+
+Sort the following list in ascending order using selection sort:
+
+`[7, 3, 6, 2]`
+
+1. Identify the smallest value in the unsorted part during each pass.
+2. Show the list after each pass.
+3. Write down the final sorted list.
+
+### Activity E — Understanding Algorithm Efficiency
+
+Consider two algorithms that search for an item in a collection:
+
+- Algorithm A checks each element one by one.
+- Algorithm B repeatedly divides the search area in half.
+
+Answer the following questions:
+
+1. Which algorithm is linear search?
+2. Which algorithm is binary search?
+3. Which algorithm is generally more efficient for a large, sorted collection? Explain briefly.
 
 ## 4. Answers and Explanations
 
-**Activity A:** Check `4`, then `1`, then `7`. The target is at position 3. Linear search stops as soon as it finds the target.
+**Activity A — Linear Search**
 
-**Activity B:** Start with `[4, 2, 5, 1]`.
+1. Check `4`, then `1`, and finally `7`.
+2. The target is at position 3.
+3. Three elements are checked.
 
-- Swap 4 and 2: `[2, 4, 5, 1]`
-- Compare 4 and 5: no swap.
-- Swap 5 and 1: `[2, 4, 1, 5]`
+Linear search stops when it finds the target, so it does not need to check the remaining elements.
 
-The first pass ends at `[2, 4, 1, 5]`. After the remaining passes, the sorted list is `[1, 2, 4, 5]`.
+**Activity B — Bubble Sort**
 
-**Activity C:** Binary search is usually the better choice because it repeatedly halves the search range. The list must remain sorted for binary search to work correctly.
+Original list: `[4, 2, 5, 1]`
+
+First pass:
+
+- Compare `4` and `2`. Swap them: `[2, 4, 5, 1]`
+- Compare `4` and `5`. No swap is needed.
+- Compare `5` and `1`. Swap them: `[2, 4, 1, 5]`
+
+The list after the first pass is:
+
+`[2, 4, 1, 5]`
+
+After the remaining passes, the final sorted list is:
+
+`[1, 2, 4, 5]`
+
+**Activity C — Choosing an Algorithm**
+
+1. Binary search.
+2. It repeatedly halves the search area, reducing the number of comparisons needed.
+3. The student IDs must be sorted.
+
+Binary search is generally more efficient for large, sorted collections than checking every element one by one.
+
+**Activity D — Selection Sort**
+
+Original list: `[7, 3, 6, 2]`
+
+- Pass 1: Select `2` and swap it with `7`: `[2, 3, 6, 7]`
+- Pass 2: Select `3`. It is already in the correct position: `[2, 3, 6, 7]`
+- Pass 3: Select `6`. It is already in the correct position: `[2, 3, 6, 7]`
+
+Final sorted list:
+
+`[2, 3, 6, 7]`
+
+**Activity E — Understanding Algorithm Efficiency**
+
+1. Algorithm A is linear search.
+2. Algorithm B is binary search.
+3. Binary search is generally more efficient because it eliminates approximately half of the remaining search area at each step.
 
 ## 5. Key Takeaways
 
-- Linear search checks items one by one.
-- Binary search narrows the search range and requires sorted data.
-- Sorting algorithms arrange data into a chosen order using different methods.
-- The best algorithm depends on the problem, the data, and the required efficiency.
+- Linear search checks elements one by one until the target is found or the collection ends.
+- Binary search repeatedly halves the search area and requires sorted data.
+- Bubble sort compares adjacent elements and swaps them when necessary.
+- Selection sort repeatedly finds the smallest remaining element and places it in the correct position.
+- Different algorithms can solve the same problem but may require different amounts of time and resources.
+- Choosing an appropriate algorithm depends on the problem, the data, and the required efficiency.
 
 ## 6. Resources and References
 
@@ -102,4 +207,4 @@ The first pass ends at `[2, 4, 1, 5]`. After the remaining passes, the sorted li
    https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/  
    Lecture materials and exercises on algorithms and data structures.
 
-These resources are provided for further learning and verification. The team should check the relevant materials, confirm the examples and answers, and record the outcome of peer review before marking this file as checked.
+These resources are provided for further learning and reference. Learners can use them to review the concepts and explore additional examples.
