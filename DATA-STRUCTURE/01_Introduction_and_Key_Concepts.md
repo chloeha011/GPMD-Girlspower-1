@@ -1,89 +1,60 @@
-
-# Data Structures
+# Data Structures: Introduction and Key Concepts
 
 ## 1. Introduction to Data Structures
 
 ### 1.1 What Is a Data Structure?
 
-A data structure is a way of organizing and storing data in a computer so that it can be accessed, changed, and used efficiently.
+A **data structure** is a way of organizing and storing data so that a computer program can access, update, and process it.
 
-Computers work with large amounts of information. For example, a university system may store student names, identification numbers, grades, and course information. If this information is not organized properly, it can become difficult to find or update the information we need.
+Programs often work with many kinds of information. For example, a university system may store student names, identification numbers, grades, and course details. Organizing this information makes it easier to find and manage what the program needs.
 
-Data structures help solve this problem by arranging information in different ways depending on how it will be used.
+Think of having 20 books. You could place them all in one box, but finding a particular book might take time. If you arrange them by subject or title, finding one becomes easier. Data structures apply a similar idea to information used by computer programs.
 
-We can understand this idea through an everyday example.
-
-Imagine that you have 20 books. You could put all of them in one large box. The books would be stored, but finding a particular book might take a long time.
-
-Instead, you could organize them by subject, arrange them alphabetically, or place frequently used books on a separate shelf. Each method makes it easier to find certain books.
-
-Computers use a similar principle. A data structure provides an organized way to store information so that different operations can be performed on it.
+Different data structures organize data in different ways. The best choice depends on what the program needs to do with the data.
 
 ### 1.2 Why Are Data Structures Important?
 
-Data structures are important because they affect how efficiently a program can work with information.
+A program may need to perform several common operations on stored data:
 
-Programs often need to perform several common operations:
-
-- **Access:** Get a particular piece of data.
-- **Search:** Find an item in a collection.
+- **Access:** Retrieve an item from a particular position or location.
+- **Search:** Find an item that matches a value or condition.
 - **Insert:** Add a new item.
 - **Delete:** Remove an item.
-- **Update:** Change existing information.
-- **Traverse:** Visit the items in a collection, often one by one.
+- **Update:** Change an existing item.
+- **Traverse:** Visit the items in a data structure, usually in a particular order.
 
-Different data structures make these operations easier or more efficient in different situations.
+Different data structures support these operations in different ways. For example, an array allows direct access by index, while a linked list usually requires moving through nodes to reach an item by position.
 
-For example, imagine an application that stores a student's grades. The application may need to display all grades, find the highest grade, add a new result, or update an existing grade. The way the grades are organized affects how these tasks are performed.
+There is no single data structure that is best for every task. Programmers choose one based on the type of data, the operations required, and the efficiency needed.
 
-There is no single data structure that is best for every situation. The most suitable choice depends on the type of information and the operations a program needs to perform.
+### 1.3 Data Structures and Algorithms
 
-### 1.3 The Relationship Between Data Structures and Algorithms
+A **data structure** organizes and stores information. An **algorithm** is a set of steps used to solve a problem or complete a task.
 
-Data structures and algorithms are closely connected, but they have different purposes.
+They work together. For example, a program might store student names in an array and use a searching algorithm to find a particular name. It could use a sorting algorithm to arrange the names alphabetically.
 
-A data structure determines how information is organized and stored. An algorithm describes the steps used to solve a problem or perform a task.
-
-Consider a university database containing student names.
-
-- The data structure stores the names in an organized form.
-- A searching algorithm explains how to find a particular name.
-- A sorting algorithm explains how to arrange the names alphabetically.
-
-The data structure and algorithm work together to solve the problem.
-
-Choosing an appropriate data structure can also make an algorithm more efficient. For example, finding an item in a well-organized structure may require fewer steps than searching through an unorganized collection.
+Choosing a suitable data structure can make an algorithm easier to implement or more efficient. In the same way, the algorithm chosen affects how the data structure is used.
 
 ## 2. Common Types of Data Structures
 
-Data structures can organize information in several ways. Some store items in a sequence, while others organize items according to relationships or connections.
+Data structures can be grouped in different ways. One useful distinction is between **linear** and **non-linear** structures:
 
-This section introduces six important examples:
+- **Linear data structures** arrange elements in a sequence. Examples include arrays, linked lists, stacks, and queues.
+- **Non-linear data structures** organize elements in hierarchical or network-like relationships. Examples include trees and graphs.
 
-1. Arrays
-2. Linked lists
-3. Stacks
-4. Queues
-5. Trees
-6. Graphs
-
-Each structure has its own characteristics and is useful for different types of tasks.
+The following sections introduce six commonly used structures.
 
 ### 2.1 Arrays
 
-An array is a data structure that stores a sequence of elements. Each element has a position, often called an **index**, that can be used to access it.
+An **array** stores elements in an ordered sequence. Each element can be accessed using its **index**, which identifies its position.
 
-For example, imagine that a teacher wants to store the grades of five students.
-
-The grades could be represented as follows:
+For example, a teacher could store five students' grades in an array:
 
 ```text
 [85, 92, 78, 90, 88]
 ```
 
-Each number represents one student's grade.
-
-In many programming languages, the first element has index `0`, the second has index `1`, and so on.
+In a zero-based indexing system, the first element has index `0`, the second has index `1`, and so on.
 
 | Index | Grade |
 |---:|---:|
@@ -93,108 +64,57 @@ In many programming languages, the first element has index `0`, the second has i
 | 3 | 90 |
 | 4 | 88 |
 
-If we want to access the grade at index `2`, we get `78`.
+The grade at index `2` is `78`.
 
-The exact rules for arrays depend on the programming language. Some arrays have a fixed size, while other array-like structures can grow or shrink.
+**How it works:** Each element has a position in the sequence. If the index is known, a program can usually access the corresponding element directly.
 
-**How do arrays work?**
+**Advantages**
+- Fast access to an element by index.
+- Simple way to store and process an ordered collection.
+- Useful when the number of items is known or when access by position is common.
 
-Imagine that each element has its own numbered position. If you know the index, you can usually access the corresponding element directly.
-
-For example, consider the array:
-
-```text
-["Apple", "Banana", "Orange", "Grape"]
-```
-
-If we want to access `"Orange"`, we use index `2` in a zero-based indexing system.
-
-This makes arrays convenient when we need to access items by position.
-
-**Advantages of arrays**
-
-- Elements can usually be accessed quickly by index.
-- The elements are organized in a clear sequence.
-- Arrays are useful for storing lists of similar kinds of information, such as grades, prices, or temperatures.
-
-**Disadvantages of arrays**
-
+**Limitations**
 - Inserting or deleting an element in the middle may require other elements to shift.
-- Fixed-size arrays cannot grow beyond their allocated capacity.
-- Finding a particular value may still require searching through the elements if its position is unknown.
+- Some arrays have a fixed capacity. Dynamic array structures can grow, but resizing may require additional work.
+- Finding a value when its position is unknown may require a search.
 
-**When are arrays useful?**
-
-Arrays are useful when data needs to be stored in a sequence and accessed by position. Examples include storing monthly sales figures, examination results, or daily temperatures.
+**Common uses:** Storing grades, temperatures, prices, or other ordered collections.
 
 ### 2.2 Linked Lists
 
-A linked list is a data structure made up of elements called **nodes**. Each node stores data and a reference to another node, which connects the elements together.
+A **linked list** is a sequence of **nodes**. Each node stores data and a reference to another node. In a singly linked list, each node refers to the next node.
 
-Unlike an array, a linked list does not rely on elements being stored as one indexed sequence. Instead, each node contains information about where the next node can be found.
-
-For example, imagine a list of tasks:
-
-```text
-Task A → Task B → Task C → Task D
-```
-
-Each task represents a node. The arrow shows that one node points to the next node.
-
-A simple linked list usually has a starting node, called the **head**. To reach a later node, we follow the links from the beginning.
-
-**How does a linked list work?**
-
-Suppose we have the following linked list:
+Example:
 
 ```text
 10 → 20 → 30 → 40 → NULL
 ```
 
-Each node contains a value and a reference to the next node.
+The first node is called the **head**. Each arrow represents a link to the next node. `NULL` indicates that the final node has no next node.
 
-- The first node stores `10` and links to the node containing `20`.
-- The second node stores `20` and links to the node containing `30`.
-- The third node stores `30` and links to the node containing `40`.
-- The final node stores `40` and has no next node, represented here by `NULL`.
+**How it works:** To reach a particular node, a program follows the links from the head until it reaches the required node. Unlike an array, a linked list does not provide direct access by index.
 
-The exact representation depends on the programming language, but the main idea is that nodes are connected through references.
+**Advantages**
+- Can grow or shrink as nodes are added or removed.
+- Insertion or deletion can be efficient when the relevant node or its preceding node is already known.
+- Nodes do not need to be stored next to one another in memory.
 
-**Advantages of linked lists**
+**Limitations**
+- Accessing a node by position usually requires moving through the list from the head.
+- Each node needs extra memory for its link or links.
+- Managing connections between nodes can make implementation more complex.
 
-- They can grow or shrink as elements are added or removed.
-- Inserting or deleting a node can be efficient when the relevant position or node is already known.
-- They do not require all elements to be stored in one continuous block of memory.
+**Common uses:** Implementing other data structures and managing collections where items are frequently inserted or removed at known positions.
 
-**Disadvantages of linked lists**
-
-- Accessing an element by position usually requires moving through the list from the beginning.
-- Each node needs additional memory for its references.
-- Managing links can make implementation more complicated than using an array.
-
-**When are linked lists useful?**
-
-Linked lists can be useful when a program frequently inserts or removes elements at known positions. They are also helpful for understanding how more complex data structures can be built from connected nodes.
-
-However, linked lists are not automatically better than arrays. For example, arrays are generally more convenient when fast access by index is important.
+**Important:** Linked lists are not always better than arrays. Arrays are generally more suitable when frequent access by index is needed.
 
 ### 2.3 Stacks
 
-A stack is a data structure that follows the principle **Last In, First Out (LIFO)**.
+A **stack** is a data structure that follows the **Last In, First Out (LIFO)** principle: the most recently added item is the first one removed.
 
-This means that the last item added is the first item removed.
+Think of a stack of plates. A new plate is placed on top, and the top plate is normally the first one taken off.
 
-Think of a stack of plates. When you place a new plate on top, it becomes the first plate you can take away. To reach a plate underneath, you usually need to remove the plates above it first.
-
-**How does a stack work?**
-
-Imagine an empty stack.
-
-1. Add `10`.
-2. Add `20`.
-3. Add `30`.
-
-The stack now looks like this:
+Example: after pushing `10`, `20`, and `30` onto an empty stack:
 
 ```text
 Top
@@ -204,196 +124,98 @@ Top
 [10]
 ```
 
-If we remove one item, the value `30` is removed first because it was added most recently.
+The next item removed is `30`, because it was added last.
 
-The remaining stack is:
-
-```text
-Top
- ↓
-[20]
-[10]
-```
-
-Stacks commonly support three operations:
-
+**Main operations**
 - **Push:** Add an item to the top.
-- **Pop:** Remove the top item.
-- **Peek:** View the top item without removing it.
+- **Pop:** Remove the item at the top.
+- **Peek (or Top):** View the top item without removing it.
 
-In a typical stack implementation, adding and removing the top item can be performed efficiently.
+**Advantages**
+- Simple rules for adding and removing items.
+- Adding or removing the top item is usually efficient.
+- Useful when the most recent item must be handled first.
 
-**Advantages of stacks**
+**Limitations**
+- Standard stack operations provide access to the top item only.
+- Reaching an item lower in the stack requires removing the items above it or using another method.
 
-- Their rules are simple and easy to understand.
-- Adding or removing the top element is usually efficient.
-- They are useful whenever the most recent item needs to be handled first.
-
-**Disadvantages of stacks**
-
-- Only the top item is directly available through standard stack operations.
-- Accessing an item lower down usually requires removing items above it or using another method.
-
-**When are stacks useful?**
-
-Stacks are used in many computer applications. For example:
-
-- **Undo operations:** A text editor can store recent actions so that the latest action can be undone first.
-- **Browser history:** A stack-like approach can support certain navigation operations.
-- **Function calls:** Programs use a call stack to keep track of active function calls.
-
-The key idea is that a stack processes the most recently added item first.
+**Common uses:** Undo features, function-call management, and checking matching brackets in expressions.
 
 ### 2.4 Queues
 
-A queue is a data structure that usually follows the principle **First In, First Out (FIFO)**.
+A **queue** is a data structure that usually follows the **First In, First Out (FIFO)** principle: the earliest added item is the first one removed.
 
-This means that the first item added is the first item removed.
+A queue works like a line of people waiting for a service. New arrivals join the rear, and the person at the front is served first.
 
-A queue works like a line of people waiting to buy tickets. The person who arrives first is normally served first, while new arrivals join the end of the line.
-
-**How does a queue work?**
-
-Imagine a queue containing three tasks:
+Example:
 
 ```text
 Front → [Task A] [Task B] [Task C] ← Rear
 ```
 
-Task A is at the front, so it will be processed first.
+If Task A is removed, Task B becomes the next item at the front.
 
-Suppose a new task, Task D, arrives. It is added to the rear:
+**Main operations**
+- **Enqueue:** Add an item to the rear.
+- **Dequeue:** Remove an item from the front.
+- **Front (or Peek):** View the item at the front without removing it.
 
-```text
-Front → [Task A] [Task B] [Task C] [Task D] ← Rear
-```
+**Advantages**
+- Processes items in arrival order.
+- Useful for managing tasks waiting for a shared resource.
+- Helps organize requests that should be handled in sequence.
 
-If Task A is processed and removed, Task B becomes the next item to be processed.
+**Limitations**
+- In a standard queue, an item cannot normally be removed from the middle before the items ahead of it.
+- A basic FIFO queue is not suitable when tasks must be processed by priority.
 
-Queues commonly support two operations:
+**Common uses:** Print jobs, waiting requests on a server, and task scheduling.
 
-- **Enqueue:** Add an item to the rear of the queue.
-- **Dequeue:** Remove an item from the front of the queue.
-
-**Advantages of queues**
-
-- They process items in the order they arrive.
-- They are useful for managing tasks that must wait their turn.
-- They help organize processes that share a limited resource.
-
-**Disadvantages of queues**
-
-- In a standard queue, items in the middle are not directly removed before items ahead of them.
-- A queue may not be suitable when the newest item or the highest-priority item should be processed first.
-
-**When are queues useful?**
-
-Queues are useful in many everyday computer systems:
-
-- Managing print jobs sent to a printer.
-- Organizing customer requests on a server.
-- Processing messages in the order they arrive.
-- Managing tasks that are waiting to be executed.
-
-The main difference between a stack and a queue is the order in which items are removed. A stack removes the most recently added item, while a queue normally removes the earliest added item.
+**Stack vs. queue:** A stack removes the most recently added item (LIFO), while a queue removes the earliest added item (FIFO).
 
 ### 2.5 Trees
 
-A tree is a data structure that organizes data in a hierarchy. It consists of nodes connected by relationships, usually described as parent-child relationships.
+A **tree** is a non-linear data structure that organizes data hierarchically. It consists of nodes connected by edges and commonly uses parent-child relationships.
 
-Trees are similar to a family tree or the folders on a computer. A main folder can contain subfolders, and those subfolders can contain more folders or files.
-
-**Basic tree terminology**
-
-Consider this simple tree:
+Example:
 
 ```text
        A
-      / \
+      / \\
      B   C
-    / \
+    / \\
    D   E
 ```
 
-This structure contains several important concepts:
-
-- **Root:** The top node. In this example, `A` is the root.
-- **Parent:** A node that has one or more child nodes. For example, `B` is the parent of `D` and `E`.
-- **Child:** A node directly connected below another node. For example, `C` is a child of `A`.
-- **Leaf:** A node with no children. In this example, `C`, `D`, and `E` are leaves.
+**Basic terminology**
+- **Root:** The top node of a rooted tree. In this example, `A` is the root.
+- **Parent:** A node directly above one or more child nodes. `B` is the parent of `D` and `E`.
+- **Child:** A node directly below its parent. `C` is a child of `A`.
+- **Leaf:** A node with no children. Here, `C`, `D`, and `E` are leaves.
 - **Edge:** A connection between two nodes.
 
-A tree does not need to have exactly two children per node. The example above is a simple binary tree because each node has at most two children.
+A **binary tree** is a tree in which each node has at most two children. Not all trees are binary trees.
 
-**How do trees work?**
+**How it works:** Nodes are connected according to their hierarchical relationships. A program can follow these connections to find, add, remove, or visit nodes. Some types of trees follow additional rules to make searching more efficient.
 
-Trees organize information according to relationships rather than simply placing everything in one sequence.
+**Advantages**
+- Represents hierarchical information clearly.
+- Organizes data into levels and relationships.
+- Certain types, such as balanced search trees, support efficient searching and updating.
 
-For example, a computer's file system can be represented as a tree:
+**Limitations**
+- More complex to implement than a simple array or list.
+- Performance depends on the type and shape of the tree.
+- An unbalanced search tree may make some operations slower.
 
-```text
-Documents
-├── University
-│   ├── Notes
-│   └── Assignments
-└── Personal
-    ├── Photos
-    └── Letters
-```
-
-The `Documents` folder is the root of this example. It contains two subfolders, and each of those folders can contain other items.
-
-This hierarchical organization makes it easier to understand how information is grouped and to navigate between folders.
-
-Some trees, such as binary search trees, also follow rules that help programs search for information efficiently. However, not every tree has these ordering rules.
-
-**Advantages of trees**
-
-- They represent hierarchical relationships clearly.
-- They are useful for organizing data into levels.
-- Certain tree structures support efficient searching, insertion, and deletion.
-
-**Disadvantages of trees**
-
-- They can be more complicated to implement and manage than simple lists.
-- The efficiency of operations depends on the type and shape of the tree.
-- An unbalanced search tree can become inefficient for some operations.
-
-**When are trees useful?**
-
-Trees are used in:
-
-- Computer file systems.
-- Organization charts.
-- Family trees.
-- Hierarchical menus.
-- Search structures in databases and programs.
-
-The main idea is that trees are useful when information naturally forms a hierarchy.
+**Common uses:** Computer folder systems, organization charts, hierarchical menus, and search structures.
 
 ### 2.6 Graphs
 
-A graph is a data structure used to represent objects and the relationships or connections between them.
+A **graph** is a non-linear data structure used to represent objects and the connections between them. It consists of **vertices** (also called nodes) and **edges** that connect pairs of vertices.
 
-A graph consists of two basic components:
-
-- **Vertices (or nodes):** The objects being represented.
-- **Edges:** The connections between those objects.
-
-Graphs are especially useful for representing networks, where one object can be connected to many others.
-
-**How do graphs work?**
-
-Imagine a social network with four people: Anna, Ben, Chloe, and David.
-
-Suppose the connections are:
-
-- Anna is connected to Ben.
-- Anna is connected to Chloe.
-- Ben is connected to David.
-- Chloe is connected to David.
-
-We can represent these relationships as a graph:
+For example, a simplified network of four people could be represented as:
 
 ```text
 Anna ─── Ben
@@ -402,97 +224,80 @@ Anna ─── Ben
 Chloe ─ David
 ```
 
-Each person's name represents a vertex, and each line represents a connection between two people.
+Each name represents a vertex, and each line represents an edge. The diagram shows connections only; it does not specify what those relationships mean.
 
-The diagram is a simplified illustration of the relationships. The connections do not necessarily represent real friendship rules or the direction of an interaction.
+**Common graph types**
+- **Undirected graph:** Edges have no direction. A connection is represented as going both ways.
+- **Directed graph:** Edges have a direction, showing which vertex the connection goes from and to.
+- **Weighted graph:** Edges have numerical values, such as distance, time, or cost.
 
-Graphs can be **undirected** or **directed**.
+**How it works:** A program stores vertices and the edges between them. It can then explore connections, find paths, or analyze relationships using graph algorithms.
 
-- **Undirected graph:** A connection works in both directions. For example, if two people are connected as friends, the relationship may be represented by an undirected edge.
-- **Directed graph:** Connections have a direction. For example, if one social media user follows another, the connection goes from the follower to the account being followed.
+**Advantages**
+- Represents complex relationships and networks.
+- Models routes and connections between many objects.
+- Supports tasks such as pathfinding and network analysis.
 
-Graphs can also be **weighted**. A weight is a value assigned to an edge, such as the distance between two cities or the cost of travelling between locations.
+**Limitations**
+- Large graphs can require significant memory and processing.
+- Finding paths or analyzing relationships may require more complex algorithms.
+- Performance depends on the graph's size, connections, and representation.
 
-**Advantages of graphs**
+**Common uses:** Navigation systems, social networks, computer networks, and recommendation systems.
 
-- They represent complex relationships between objects.
-- They can model networks and routes.
-- They support algorithms for finding paths, exploring connections, and analyzing networks.
+**Tree vs. graph:** A tree is a connected structure with no cycles and a hierarchical organization. A general graph can have cycles, may be disconnected, and does not need a root.
 
-**Disadvantages of graphs**
+## 3. Comparing the Six Data Structures
 
-- Large graphs can be complicated to store and process.
-- Finding useful paths or analyzing relationships may require complex algorithms.
-- Some graph problems become computationally expensive as the number of vertices and edges grows.
-
-**When are graphs useful?**
-
-Graphs are used in many real-world systems:
-
-- **Navigation apps:** Cities or locations are represented as vertices, while roads are represented as edges.
-- **Social networks:** Users are vertices, and relationships are edges.
-- **Computer networks:** Devices are vertices, and communication links are edges.
-- **Recommendation systems:** Connections can represent relationships between users, products, or interests.
-
-The main idea is that graphs are suitable when the connections between items are as important as the items themselves.
-
-## 3. Comparing Different Data Structures
-
-Each data structure organizes information differently. Understanding these differences helps programmers choose a suitable structure for a problem.
-
-| Data structure | How data is organized | Main advantage | Example use |
+| Data structure | How data is organized | Useful when... | Example use |
 |---|---|---|---|
-| Array | Elements arranged in a sequence with positions | Fast access by index | Student grades |
-| Linked list | Nodes connected by references | Flexible insertion and deletion at known positions | A sequence of changing items |
-| Stack | Items added and removed at the top | Processes the newest item first | Undo operations |
-| Queue | Items added at the rear and removed at the front | Processes items in arrival order | Print jobs |
-| Tree | Nodes organized hierarchically | Represents parent-child relationships | File systems |
-| Graph | Nodes connected by edges | Represents networks and relationships | Maps and social networks |
+| Array | Ordered elements accessed by index | Access by position is important | Student grades |
+| Linked list | Nodes connected by references | Items are inserted or removed at known locations | A changing sequence of items |
+| Stack | Items added and removed at the top | The latest item should be handled first | Undo operations |
+| Queue | Items added at the rear and removed at the front | Items should be handled in arrival order | Print jobs |
+| Tree | Nodes arranged hierarchically | Data has parent-child relationships | File systems |
+| Graph | Vertices connected by edges | Relationships or routes between items matter | Maps and social networks |
 
-These are general descriptions rather than guarantees about performance. The efficiency of an operation can depend on the specific implementation and the way the data is used.
+These are general characteristics, not guarantees about speed. The performance of an operation depends on the specific implementation and the amount and arrangement of data.
 
-## 4. How Do We Choose a Data Structure?
+## 4. Choosing a Suitable Data Structure
 
-When choosing a data structure, a programmer should first consider what the program needs to do.
+When choosing a data structure, a programmer should consider:
+
+1. **The type of data:** What information needs to be stored?
+2. **Required operations:** Will the program search, access, insert, delete, or update items frequently?
+3. **Efficiency:** How much time and memory can the program use?
+4. **Relationships:** Is the information arranged in a sequence, hierarchy, or network?
 
 For example:
+- Use an **array** when frequent access by position is needed.
+- Use a **stack** when the most recently added item should be processed first.
+- Use a **queue** when items should be processed in arrival order.
+- Use a **tree** when information has a hierarchical structure.
+- Use a **graph** when the connections between items are important.
 
-- If a program needs to access elements frequently by their position, an array may be suitable.
-- If a program needs to process the newest item first, a stack may be appropriate.
-- If a program needs to process items in the order they arrive, a queue may be appropriate.
-- If a program needs to represent hierarchical information, a tree may be useful.
-- If a program needs to represent relationships between many connected objects, a graph may be the best choice.
+### Example: A University Application
 
-There are often several possible solutions to the same problem. The goal is to select a structure that makes the required operations convenient and efficient.
+A university application may use several data structures because its features have different requirements:
 
-### Example: Designing a University Application
+- **Grades:** An array can store a sequence of grades.
+- **Undoing edits:** A stack can keep track of recent actions.
+- **Pending requests:** A queue can process requests in arrival order.
+- **Departments:** A tree can represent departments and their subgroups.
+- **Student connections:** A graph can represent relationships in a student network.
 
-Imagine that we are developing an application for university students.
-
-Different parts of the application may use different data structures:
-
-- **Grades:** An array could store a sequence of grades.
-- **Undoing edits:** A stack could keep track of recent actions.
-- **Pending requests:** A queue could process requests in arrival order.
-- **University departments:** A tree could represent departments and their subgroups.
-- **Connections between students:** A graph could represent relationships within a student network.
-
-This example demonstrates that one application can use several data structures because different tasks have different requirements.
+This example shows that a single program can use multiple data structures. The appropriate choice depends on the task each part of the program needs to perform.
 
 ## Sources
 
-1. **MIT OpenCourseWare — Introduction to Algorithms (Spring 2020)**  
-   A university-level course with lecture notes on data structures, hashing, binary trees, heaps, and related algorithms. Some material is more advanced than this beginner introduction.  
+1. **MIT OpenCourseWare — Introduction to Algorithms (Spring 2020).** University lecture notes covering data structures and related algorithms. Some topics are more advanced than this introductory chapter.  
    https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/pages/lecture-notes/
 
-2. **Brooklyn College — CISC 3130 Data Structures**  
-   An educational resource covering arrays, linked lists, stacks, queues, trees, graphs, and other data structures.  
+2. **Brooklyn College — CISC 3130: Data Structures.** Course materials covering common data structures, including arrays, linked lists, stacks, queues, trees, and graphs.  
    https://libguides.brooklyn.cuny.edu/cisc3130/schedule
 
-3. **Universidad Carlos III de Madrid — Data Structures and Algorithms Lecture Notes**  
-   University teaching materials covering abstract data types, stacks, queues, linked lists, binary search trees, and graphs.  
+3. **Universidad Carlos III de Madrid — Data Structures and Algorithms Lecture Notes.** University materials covering abstract data types and common data structures.  
    https://ocw.uc3m.es/mod/page/view.php?id=3160&lang=en
 
-4. **University of Michigan — EECS 281 Lecture Notes**  
-   Course notes covering data structures and algorithms, including arrays, lists, stacks, queues, trees, and graphs.  
+4. **University of Michigan — EECS 281 Lecture Notes.** Course notes on data structures and algorithms.  
    https://www.eecs.umich.edu/courses/eecs281/f04/lecnotes.html
