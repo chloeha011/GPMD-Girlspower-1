@@ -2,14 +2,14 @@
 
 ## 2.1 Introduction
 
-When working with data, we often need to find a particular item or arrange a collection into a more useful order. For example, a student may search for a name in a class list, while an online store may sort products by price.
+When working with data, we often need to find a particular item or arrange a collection into a useful order. For example, a student may search for a name in a class list, while an online store may sort products by price.
 
 In computer science, these tasks are handled by searching and sorting algorithms.
 
-- **Searching algorithms** help us find a specific item in a collection of data.
-- **Sorting algorithms** arrange data in a chosen order.
+- **Searching algorithms** find a specific item in a collection of data.
+- **Sorting algorithms** arrange data in a chosen order, such as smallest to largest or alphabetically.
 
-Different algorithms approach these tasks in different ways. Understanding how they work helps us choose a suitable method for a particular problem.
+Different algorithms use different methods to complete these tasks. Understanding how they work helps us choose a suitable method for a particular problem.
 
 ## 2.2 Searching Algorithms
 
@@ -17,7 +17,7 @@ Different algorithms approach these tasks in different ways. Understanding how t
 
 **Linear search** finds an item by checking each element one at a time, starting from the beginning of the collection.
 
-It does not require the data to be sorted, which makes it a simple and flexible method.
+It does not require the data to be sorted, making it a simple and flexible searching method.
 
 #### Example
 
@@ -47,11 +47,11 @@ If the target is the first element, linear search finds it immediately. If it is
 
 - Easy to understand and implement.
 - Works with both sorted and unsorted data.
-- Useful for small collections or data that has not been organized.
+- Suitable for small collections or data that has not been organized.
 
 #### Limitations
 
-- May require many comparisons for large collections.
+- May require many comparisons when searching large collections.
 - In the worst case, it checks all `n` elements in a collection of size `n`.
 
 ### 2.2.2 Binary Search
@@ -59,6 +59,10 @@ If the target is the first element, linear search finds it immediately. If it is
 **Binary search** finds a target by repeatedly dividing the search area in half.
 
 Unlike linear search, binary search requires the data to be sorted. At each step, the algorithm checks a middle element and uses the result to decide which half may contain the target.
+
+- If the middle value is the target, the search stops.
+- If the target is greater than the middle value, search the upper half.
+- If the target is smaller than the middle value, search the lower half.
 
 #### Example
 
@@ -82,13 +86,13 @@ Remaining search area:
 
 Choose `12`.
 
-Since `14` is greater than `12`, continue with the values to its right.
+Since `14` is greater than `12`, continue searching the values to its right.
 
 Remaining search area:
 
 `[14, 16]`
 
-**Step 3: Check the next middle element**
+**Step 3: Check the middle element**
 
 Check `14`.
 
@@ -100,7 +104,7 @@ The value matches the target, so the search stops.
 | 2 | 12 | Search the upper half of the remaining area |
 | 3 | 14 | Target found |
 
-This example shows how binary search reduces the number of possible candidates at each step instead of checking every element.
+This example shows how binary search reduces the number of possible values at each step instead of checking every element.
 
 #### Advantages
 
@@ -110,7 +114,7 @@ This example shows how binary search reduces the number of possible candidates a
 #### Limitations
 
 - Requires sorted data.
-- Is more complex to implement than linear search.
+- More complex to implement than linear search.
 - Sorting an unsorted collection first may require additional work.
 
 ### 2.2.3 Linear Search vs. Binary Search
@@ -125,23 +129,26 @@ This example shows how binary search reduces the number of possible candidates a
 
 Here, `n` represents the number of elements in the collection.
 
-The notation `O(n)` means that the amount of work can grow roughly in proportion to the number of elements. The notation `O(log n)` describes a much slower rate of growth because the search area is repeatedly halved.
+- **`O(n)`** means the amount of work grows roughly in proportion to the number of elements.
+- **`O(log n)`** means the amount of work grows much more slowly because the search area is repeatedly divided in half.
 
-For example, linear search may check up to 1,000 elements in a list of 1,000 items. Binary search on a sorted list of the same size needs only about 10 comparisons in the usual implementation.
+For example, searching a sorted list of 1,000 items using binary search takes about 10 comparisons in the worst case, while linear search may need to check all 1,000 items.
 
-**Key idea:** Linear search is a good general-purpose method for small or unsorted collections. Binary search is often preferable when the data is already sorted and the collection is large.
+**Key idea:** Linear search is suitable for small or unsorted collections. Binary search is often more efficient when the data is already sorted and the collection is large.
 
 ## 2.3 Sorting Algorithms
 
-A **sorting algorithm** arranges elements in a particular order. This section introduces two basic sorting algorithms: bubble sort and selection sort.
+A **sorting algorithm** arranges elements in a particular order, such as ascending order (smallest to largest) or descending order (largest to smallest).
 
-Both algorithms can arrange the same list into ascending order, but they use different methods to decide which elements should move.
+This section introduces two basic sorting algorithms: bubble sort and selection sort. Both can arrange the same list into ascending order, but they use different methods.
 
 ### 2.3.1 Bubble Sort
 
 **Bubble sort** repeatedly compares adjacent elements and swaps them when they are in the wrong order.
 
-When sorting numbers from smallest to largest, a larger value moves toward the end of the list through a series of adjacent swaps. After each complete pass, the largest value in the unsorted section reaches its correct position.
+A **swap** means exchanging the positions of two elements.
+
+When sorting numbers from smallest to largest, larger values gradually move toward the end of the list. After each complete pass, the largest value in the unsorted section reaches its correct position.
 
 #### Example
 
@@ -152,10 +159,10 @@ Suppose we want to sort this list in ascending order:
 **Pass 1**
 
 1. Compare `5` and `3`. Swap them: `[3, 5, 8, 2]`
-2. Compare `5` and `8`. They are already in the correct order.
+2. Compare `5` and `8`. No swap is needed.
 3. Compare `8` and `2`. Swap them: `[3, 5, 2, 8]`
 
-After the first pass, `8` is in its final position.
+After the first pass, `8` is in its correct position.
 
 **Pass 2**
 
@@ -183,12 +190,13 @@ The list is now sorted.
 
 - Easy to understand and demonstrate.
 - Shows how repeated comparisons and swaps can organize data.
-- Can stop early if a complete pass makes no swaps, provided the implementation uses this optimization.
+- An optimized version can stop early if a complete pass makes no swaps.
 
 #### Limitations
 
 - Performs many comparisons when the list is large.
 - Has `O(n²)` average and worst-case time complexity in its standard form.
+- Even when the list is already sorted, an unoptimized version may still perform many comparisons.
 
 Bubble sort is useful for learning the basic idea of sorting, but it is generally not an efficient choice for large datasets.
 
@@ -196,7 +204,7 @@ Bubble sort is useful for learning the basic idea of sorting, but it is generall
 
 **Selection sort** works by repeatedly finding the smallest element in the unsorted part of a list and placing it at the beginning of that part.
 
-Unlike bubble sort, which swaps adjacent elements, selection sort selects the smallest remaining value and moves it directly to its next correct position.
+Unlike bubble sort, which compares adjacent elements, selection sort looks through the remaining unsorted elements to find the smallest value.
 
 #### Example
 
@@ -250,7 +258,7 @@ The list is now sorted.
 #### Limitations
 
 - Still performs many comparisons as the list grows.
-- Has `O(n²)` average and worst-case time complexity.
+- Has `O(n²)` time complexity in the best, average, and worst cases.
 
 Selection sort can reduce the number of swaps compared with some other simple sorting methods, but it is usually inefficient for large collections.
 
@@ -266,7 +274,7 @@ Both algorithms sort data by repeatedly working through the unsorted part of a l
 | Worst-case time complexity | `O(n²)` | `O(n²)` |
 | Main learning benefit | Demonstrates adjacent comparisons and repeated swaps | Demonstrates finding a minimum and placing it in the correct position |
 
-Although both algorithms have quadratic time complexity in their standard forms, they behave differently while sorting. Following their steps side by side is a useful way to understand how different algorithms can solve the same problem.
+Although both algorithms have quadratic time complexity in their standard forms, they behave differently while sorting. Following their steps side by side helps us understand how different algorithms can solve the same problem.
 
 ## 2.4 Choosing an Appropriate Algorithm
 
