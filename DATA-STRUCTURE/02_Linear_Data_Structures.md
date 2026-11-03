@@ -255,6 +255,6 @@ Linear data structures provide practical ways to organize and process data in a 
 
 ## References
 
-1. OpenDSA. *Data Structures and Algorithms*. [https://opendsa-server.cs.vt.edu/](https://opendsa-server.cs.vt.edu/)
-2. Python Software Foundation. *Data Structures*. [https://docs.python.org/3/tutorial/datastructures.html](https://docs.python.org/3/tutorial/datastructures.html)
+1. OpenDSA. *Data Structures and Algorithms*. https://opendsa-server.cs.vt.edu/
+2. Python Software Foundation. *Data Structures*. https://docs.python.org/3/tutorial/datastructures.html
 3. Cormen, T. H., et al. *Introduction to Algorithms*. MIT Press.
