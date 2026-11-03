@@ -132,13 +132,13 @@ A **hash table** is a data structure that stores information as key-value pairs.
 
 **Time complexity** describes how the number of operations performed by an algorithm grows as the input size increases. It is commonly expressed using Big-O notation.
 
-**Example:** A simple search through an unsorted array may need to check every element, so its worst-case time complexity is (O(n)).
+**Example:** A simple search through an unsorted array may need to check every element, so its worst-case time complexity is `O(n)`.
 
 ## 18. Space Complexity
 
 **Space complexity** describes how the amount of memory used by an algorithm grows as the input size increases.
 
-**Example:** An algorithm that creates a second array containing one item for every input element uses (O(n)) additional space.
+**Example:** An algorithm that creates a second array containing one item for every input element uses `O(n)` additional space.
 
 ## References
 
