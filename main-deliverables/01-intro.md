@@ -16,9 +16,8 @@ Our team built one learning module for beginners. The Markdown content in this r
 
 A single slide deck that supports teaching of the whole module. It was also used for our live mini lecture.
 
-- **File:** `<<file name>>.pptx`
-- **Location:** `<<GitHub path or link>>`
-- **Slides:** `<<number of slides>>`
+- **File:** GPMD_Stage2_PPT slides_v1.0
+- **Location:** https://drive.google.com/drive/folders/1o4b50s304lIjEDIDUXJ_WmGivNpStxYA?usp=sharing
 
 ## 2. Study Guide and Test Bank
 
@@ -26,8 +25,8 @@ One document for learners studying on their own.
 
 - **Study Guide:** eight chapters. Chapters 1 to 4 cover algorithms (basics, searching, sorting, efficiency). Chapters 5 and 6 cover data structures (linear and non-linear). Chapters 7 and 8 cover connectionist AI (basics and how neural networks learn).
 - **Test Bank:** 70 questions (30 true/false, 30 multiple choice, 10 extended response). Each question shows the guide chapter it comes from, and the answer key explains each answer.
-- **File:** `<<file name>>`
-- **Location:** `<<GitHub path or link>>`
+- **File:** GPMD_Stage3_Study Guide and Test Bank_V2.0
+- **Location:** https://drive.google.com/drive/folders/1BfzhOHm1M3C0j0yJPceT7mbVgKk49JTd?usp=sharing
 
 The Markdown version of the Test Bank is in the CONTENT branch: [Test bank.md](https://github.com/chloeha011/GPMD-Girlspower-1/blob/CONTENT/Test%20bank.md).
 
