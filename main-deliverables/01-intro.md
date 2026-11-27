@@ -35,12 +35,12 @@ The Markdown version of the Test Bank is in the CONTENT branch: [Test bank.md](h
 
 Four videos that explain and demonstrate the module.
 
-| # | Video title | Topic | Length | Link |
-|---|---|---|---|---|
-| 1 | `<<title>>` | `<<topic>>` | `<<mm:ss>>` | `<<link>>` |
-| 2 | `<<title>>` | `<<topic>>` | `<<mm:ss>>` | `<<link>>` |
-| 3 | `<<title>>` | `<<topic>>` | `<<mm:ss>>` | `<<link>>` |
-| 4 | `<<title>>` | `<<topic>>` | `<<mm:ss>>` | `<<link>>` |
+| # | Video title | Topic | Link |  
+|---|---|---|---|
+| 1 | GPMD_Video01_Data Structure | Data Structures | https://drive.google.com/drive/folders/14fYGOONWnoHt49Hpt1XUhssN19tvwtF4?usp=sharing |
+| 2 | GPMD_Video02_What is algorithm? | Algorithm | https://drive.google.com/drive/folders/14fYGOONWnoHt49Hpt1XUhssN19tvwtF4?usp=sharing |
+| 3 | GPMD_Video03_Searching and Sorting Algorithms | Algorithm | https://drive.google.com/drive/folders/14fYGOONWnoHt49Hpt1XUhssN19tvwtF4?usp=sharing |
+| 4 | GPMD_Video04_How neural network learns | Connectionist AI| https://drive.google.com/drive/folders/14fYGOONWnoHt49Hpt1XUhssN19tvwtF4?usp=sharing |
 
 Videos are hosted outside GitHub because of their size. The links above open without signing in. The video files are also submitted under the Video assignment.
 
