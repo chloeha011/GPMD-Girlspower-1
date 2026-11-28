@@ -11,10 +11,9 @@ This is the main README of the project. It explains the project, shows where the
 | Item | Details |
 |---|---|
 | Version | Stage 3: Final Markdown Content and Repository |
-| Snapshot date | `<<FILL: date of final commit>>` |
-| Latest commit ID | `<<FILL: first 7 characters of the final commit hash>>` |
+| Snapshot date | 27 Nov 2026 |
+| Latest commit ID | acb6c26 |
 | Branches in this version | `GENERAL`, `CONTENT`, `VISUALS` (all three are part of the final version; see Section 6) |
-| Submission package | `<<FILL: TeamName>>_Stage3_FinalMarkdown_Repository.zip` |
 
 ---
 
@@ -64,8 +63,8 @@ The final deliverables are stored in the [`main-deliverables/`](./main-deliverab
 
 | # | Deliverable | What it is | Best used for | File |
 |---|---|---|---|---|
-| 1 | **PPT Slides** (1 file) | Slide deck covering all three topics | Classroom teaching and quick revision | [](./main-deliverables/) |
-| 2 | **Study Guide and Test Bank** (1 file) | Eight chapters of explanations, examples and activities, plus a 70-question test bank with explained answers | Independent study and self-testing |  |
+| 1 | **PPT Slides** (1 file) | Slide deck covering all three topics | Classroom teaching and quick revision | https://drive.google.com/drive/folders/1BfzhOHm1M3C0j0yJPceT7mbVgKk49JTd?usp=share_link |
+| 2 | **Study Guide and Test Bank** (1 file) | Eight chapters of explanations, examples and activities, plus a 70-question test bank with explained answers | Independent study and self-testing | https://drive.google.com/drive/folders/1BfzhOHm1M3C0j0yJPceT7mbVgKk49JTd?usp=share_link |
 | 3 | **Video Tutorials** (4 videos) | Short videos that explain and demonstrate the key ideas | Learning by watching | Listed in the introduction file in `main-deliverables/` |
 
 The four videos, with their titles, topics and links, are listed in the introduction file in [`main-deliverables/`](./main-deliverables/). Large videos are hosted outside GitHub, and the video files are also submitted under the Video assignment.
